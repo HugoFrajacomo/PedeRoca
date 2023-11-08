@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5P6CdJ8v6guav6tkb2tJ2DSiN9GXz51ZivKgajotu8z/AcJKFKDJYLFgfCSd1QpOesspPmGbHkmjECQI09lQLA==",
+  "dgSpecHash": "KSAEa8HnyQYMUbUyIZeHOeA59SVcgi0vu6szHGRDcneukB0CohJ0nRoQ2I2i/G805QmqWArOQP7RYjmjsw9RMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fraja\\OneDrive\\Área de Trabalho\\Fatec\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
+  "projectFilePath": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fraja\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\fraja\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

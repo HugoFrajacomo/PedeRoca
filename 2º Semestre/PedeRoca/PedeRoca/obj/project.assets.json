@@ -10382,11 +10382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fraja\\OneDrive\\Área de Trabalho\\Fatec\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
+      "projectUniqueName": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
       "projectName": "PedeRoca",
-      "projectPath": "C:\\Users\\fraja\\OneDrive\\Área de Trabalho\\Fatec\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
+      "projectPath": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\PedeRoca.csproj",
       "packagesPath": "C:\\Users\\fraja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fraja\\OneDrive\\Área de Trabalho\\Fatec\\PedeRoca\\PedeRoca\\obj\\",
+      "outputPath": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
