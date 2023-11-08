@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/estilo.css">
+        <!-- Bootstrap Script -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Folha de estilo -->
+
+
+
+    </head>
+
+    <body>
+       <header>
+        <div>
+          <div class="row g-0 bgBanner">
+            <div class="col-md-12 d-flex justify-content-center">
+              <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça">
+            </div>
+          </div>
+        </div>
+
+        <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+        <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="efeitoMouse editListaMobile">
+              <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+            </li>
+            <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Digite sua busca" >
+                  <div class="input-group-append">
+                      <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
+                  </div>
+                </div>
+                <hr>
+                <h5 class="tituloNav">Páginas</h5>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat active2" aria-current="page" href="#"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+                  </li>
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat" href="#"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
+                  </li>
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat" href="#"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt=""> Sobre a Empresa</a>
+                  </li>
+                  <li class="nav-item dropdown efeitoMouse">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
+                      Minha Conta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <hr>
+                <h5 class="tituloNav">Redes sociais</h5>
+                <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
+                  <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="#">Meu Carrinho</a>
+                </li>
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre a empresa</a>
+                </li>
+                <li class="nav-item dropdown efeitoMouseDesktop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Minha conta
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <li class="efeitoMouse editListaMobile">
+                <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+              </li>
+            </div>
+          </div>
+        </nav>
+       </header>
+
+       <main>
+
+        <!-----------Carrocel--------------->
+        <section>
+          <div id="carouselExampleCaptions" class="carousel slide tamanhoCarrocel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Imagens/Carrocel1.jpg" class="img-fluid d-block w-100 imagemCarrossel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../Imagens/carrocel2.jpg" class="d-block w-100 imagemCarrossel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../Imagens/carrocel3.jpg" class="d-block w-100 imagemCarrossel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- Filtros de pesquisa -->
+        </section>
+        <!---------- Filtros ---------------->
+        <nav class="sticky-top filtroNav">
+          <h5>Filtros</h5>
+          <hr>
+          <div class="coluna">
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Frutas
+              </label>
+            </div>
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Legumes
+              </label>
+            </div>
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Verduras
+              </label>
+            </div>
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Orgânicos
+              </label>
+            </div>
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Bebidas
+              </label>
+            </div>
+            <div class="form-check colunaItem">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                açougue
+              </label>
+            </div>
+          </div>
+        </nav>
+        <!-------- Cards de venda ----------->
+        
+       </main>
+
+
+    </body>
+</html>

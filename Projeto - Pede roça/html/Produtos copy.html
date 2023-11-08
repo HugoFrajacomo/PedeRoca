@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- Folha de estilo -->
+        <link rel="stylesheet" href="../css/estilo.css">
+        
+        <!-- Bootstrap Script -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+    <body>
+      <div id="containerBody">
+        <!--* Início Cabeçalho *-->
+        <header id="cabecalho">
+          <section id="baner">
+            <div id="logo">
+              <img class="logoSite" src="../Imagens/Logo - Pede Roça.svg" alt="Pede Roça">
+            </div>
+            <div id="chamadaCabecalho">
+              <h1>O espaço do pequeno produtor</h1>
+            </div>
+          </section>
+          <!--* Inicio Menu de navegação *-->
+          <!--* NAVEGAÇÃO MOBILE *-->
+          <section>
+            <nav class="navbar bg-body-tertiary nav-mobile">
+              <div class="container-fluid bgNav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start NavLat" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                      <button class="btn btn-light" type="submit"><img class="tamanhoPesquisa" src="../Imagens/Icones/search.svg" alt="Pesquisar"></button>
+                    </form>
+                    <hr>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link linkNavLat" aria-current="page" href="#">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link linkNavLat" href="#">Carrinho de compras</a>
+                      </li>
+                    </ul>
+                    <hr>
+                    <div class="offcanvas-end text-center end-100">
+                      <a href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook"></a>
+                      <a href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram"></a>
+                      <a href=""><img src="../Imagens/Icones/circle/google.svg" alt="Gmail"></a>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </section>
+
+          <!--* NAVEGAÇÃO DESKTOP *-->
+          <section>
+            <nav class="nav-desktop">
+              <ul id="containerNav" class="ulEspacamento">
+                <li class="flexPesquisa">
+                  <input type="search" name="BarraPesquisa" id="BarraPesquisa" placeholder="O que você procura?">
+                  <button class="botaoPesquisa">
+                    <img class="tamanhoPesquisa" src="../Imagens/Icones/search.svg" alt="Pesquisar">
+                  </button>
+                  <span><a class="voltarHome" href="Index.html">Home</a></span>
+                </li>
+                <li class="flexAcesso">
+                  <a class="margemIcones" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt=""></a>
+                  <a class="margemIcones" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt=""></a>
+                  <a class="margemIcones" href=""><img class="estiloGoogle" src="../Imagens/Icones/circle/google.svg" alt=""></a>
+                  <a class="linkNavDesktopCarrinho margemIcones" href=""><img class="ajusteIcone" src="../Imagens/Icones/shopping-cart.svg" alt=""></a>
+                  <a class="linkNavDesktopPerfil margemIcones" href=""><img class="ajusteIcone" src="../Imagens/Icones/user.svg" alt=""></a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <!--* Fim Menu de navegação *-->
+        </header>
+        <!--* Fim Cabeçalho *-->
+        <!--* Inicio Conteúdo do site *-->
+
+
+
+        <div style="height: 600px;">
+
+        </div>
+        <!--* Fim Conteúdo do site *-->
+        <footer>
+          <h5>Mapa do site</h5>
+          <hr>
+          <article id="colunasFooter">
+            <div class="NumColum1">
+              <h6>Navegação</h6>
+              <a href="">Home</a>
+              <a href="">Hortfruti</a>
+              <a class="disable" href="">Bebidas</a>
+              <a  class="disable"href="">Alimentos artesanais</a>
+            </div>
+            <div class="NumColum2">
+              <h6>Usuário</h6>
+              <a class="disable" href="">Login</a>
+              <a class="disable" href="">Dados do usuário</a>
+              <a class="disable" href="">Administrador do sistema</a>
+              <a class="disable" href="">Preferências</a>
+            </div>
+            <div class="NumColum3">
+              <h6>Compras</h6>
+              <a class="disable" href="">Produtos</a>
+              <a class="disable" href="">Carrinho de compra</a>
+              <a class="disable" href="">Carrinho personalizado</a>
+              <a class="disable" href="">Histórico</a>
+            </div>
+            <div class="NumColum4">
+              <h6>Informações</h6>
+              <a class="disable" href="">Dúvidas</a>
+              <a class="disable" href="">Quem somos?</a>
+              <a class="disable" href="">Contato</a>
+            </div>
+          </article>
+          <hr>
+          <span>
+            <p>
+              Todos os direitos reservados a Hugo, Daniel, Gabriel. Fatec - Matão.
+            </p>
+          </span>
+        </footer>
+    </div>
+
+
+
+    </body>
+</html>
