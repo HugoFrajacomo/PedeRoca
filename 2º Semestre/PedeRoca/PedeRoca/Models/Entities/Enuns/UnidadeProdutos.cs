@@ -1,6 +1,6 @@
 ﻿namespace PedeRoca.Models.Entities.Enuns
 {
-    enum UnidadeProdutos : int
+    public enum UnidadeProdutos : int
     {
         Caixa = 1,
         Duzia = 2,

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\ADO\SQLServer\" />
+    <Folder Include="wwwroot\Imagens\" />
   </ItemGroup>
 
 </Project>

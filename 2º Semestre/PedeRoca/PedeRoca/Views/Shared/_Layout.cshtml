@@ -6,40 +6,93 @@
     <title>@ViewData["Title"] - PedeRoca</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/PedeRoca.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/estilo.css" asp-append-version="true" />
 </head>
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PedeRoca</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <!--  HEADER MOBILE-->
+        <nav>
+            <div class="caixaLogoM d-md-none">
+                <img class="ajusteLogoMobile" src="~/Imagens/Logo - Pede Roça2.svg" alt="Pede Roça">
+            </div>
+        </nav>
+
+        <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+        <nav class="d-flex justify-content-around align-items-center fixed-bottom navMobile d-md-none">
+            <div>
+                <a class="ajusteLinkNavMobile" href="Sobre.html"><i class="bi bi-buildings navImgDesktop"></i></a>
+                <p class="nomeLinkMobile">Sobre</p>
+            </div>
+            <div>
+                <a class="ajusteLinkNavMobile" href="CarrinhoCompras.html"><i class="bi bi-cart2 navImgDesktop"></i></a>
+                <p class="nomeLinkMobile">Carrinho</p>
+            </div>
+            <div class="ativoNavDeskop">
+                <a class="ajusteLinkNavMobile" href="index.html"><i class="bi bi-house navImgDesktop"></i></a>
+                <p class="nomeLinkMobile">Home</p>
+            </div>
+            <div>
+                <a class="ajusteLinkNavMobile" href="AreaDoUsuario.html"><i class="bi bi-people navImgDesktop"></i></a>
+                <p class="nomeLinkMobile">Usuário</p>
+            </div>
+            <div>
+                <a class="ajusteLinkNavMobile" href="Login.html"><i class="bi bi-person-circle navImgDesktop"></i></a>
+                <p class="nomeLinkMobile">Login</p>
+            </div>
+        </nav>
+
+        <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+        <nav class="navbar navbar-expand-md navbar bg-light desktopNavbar">
+            <div class="container">
+                <div id="navbarNav" class="bgLinksNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item botaoPadraoNav-ativo">
+                            <a class="nav-link linkPadraoNav-ativo" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link linkPadraoNav" href="CarrinhoCompras.html">
+                                <i class="bi bi-cart tamanhoCarrinhoNav"></i>Carrinho
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkPadraoNav" href="Sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="navbarNav">
+                    <a class="nav-item linkPadraoNav" href="index.html">
+                        <img class="ajusteLogo" src="../Imagens//Logo - Pede Roça2.svg" alt="Pede Roça">
+                    </a>
+                </div>
+                <div id="navbarNav" class="bgLinksNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link linkPadraoNav" href="AreaDoUsuario.html">Usuário</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkPadraoNav" href="Login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkPadraoNav" href="Cadastro.html">Cadastre-se</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - PedeRoca - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <span class="fimPaginaMobile d-md-none"></span>
+
+    <footer id="footer" class="d-none d-md-block">
+        <p class="footerText">
+            <i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel
+            - Fatec Matão
+        </p>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

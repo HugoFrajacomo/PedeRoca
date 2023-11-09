@@ -1,10 +1,12 @@
 ﻿using PedeRoca.Models.Entities.Enuns;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace PedeRoca.Models.Entities
 {
-    class Pessoa
+    public class Pessoa
     {
+        [DisplayName("ID")]
         public int Id_usuario { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]

@@ -1,6 +1,6 @@
-﻿namespace WebCarro.Configurantions
+﻿namespace PedeRoca.Configurations
 {
-    public static class AppSettings
+    public class AppSettings
     {
         //método para retornar o string defaut connection
         public static string getKeyConnectionString()

@@ -1,34 +1,42 @@
 ﻿using PedeRoca.Models.Entities.Enuns;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PedeRoca.Models.Entities
 {
-    class Produto
+    public class Produto
     {
+        [DisplayName("ID")]
         public int Id_produtos { get; set; }
 
         [Required]
         [StringLength(50, MinimumLength = 1, ErrorMessage = "Mínimo de 1 e máximo de 50 caracteres.")]
         public string Nome { get; set; }
 
+        [Required]
         [StringLength(150, MinimumLength = 1, ErrorMessage = "Mínimo de 1 e máximo de 150 caracteres.")]
         public string Descricao { get; set; }
 
         [Required]
         [StringLength(200, MinimumLength = 1, ErrorMessage = "Mínimo de 1 e máximo de 200 caracteres.")]
         public string Imagem { get; set; }
+
         [Required]
         public int QtdEstoque { get; set; }
+
         [Required]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18,2)")]
         public decimal PrecoUnitario { get; set; }
+
         [Required]
         public UnidadeProdutos Unidade { get; set; }
+
         [Required]
         public TiposProdutos Tipo { get; set; }
-        public bool Ativo { get; set; }
+
+        public Boolean Ativo { get; set; }
 
         public Produto()
         {
@@ -40,7 +48,7 @@ namespace PedeRoca.Models.Entities
             PrecoUnitario = 0;
             Unidade = 0;
             Tipo = 0;
-            Ativo = true;
+            Ativo = false;
         }
     }
 }

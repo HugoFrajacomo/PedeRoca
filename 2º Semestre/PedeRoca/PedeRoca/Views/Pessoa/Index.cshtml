@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PedeRoca.Models.Entities.Pessoa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="formatacaoTabelas">
+    <h1>Index</h1>
+
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id_usuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id_usuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id=item.Id_usuario }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Id_usuario  }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Id_usuario  } )
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,6 +1,6 @@
 ﻿namespace PedeRoca.Models.Entities.Enuns
 {
-    enum TiposProdutos : int
+    public enum TiposProdutos : int
     {
         Frutas = 1,
         Legumes = 2,
