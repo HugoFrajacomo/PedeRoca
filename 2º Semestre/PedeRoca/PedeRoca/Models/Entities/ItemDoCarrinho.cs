@@ -1,11 +1,16 @@
-﻿namespace PedeRoca.Models.Entities
-{
-    class ItemDoCarrinho
-    {
-        public int Id_Carrinho { get; set; }
-        public int Quantidade { get; set; }
-        public Produto Produto { get; set; }
+﻿using System.ComponentModel;
 
+namespace PedeRoca.Models.Entities
+{
+    public class ItemDoCarrinho
+    {
+        [DisplayName("ID")]
+        public int Id_itemCarrinho { get; set; }
+        public Produto Produto { get; set; }  = new Produto();
+        [DisplayName("QTD")]
+        public int Quantidade { get; set; }
+
+        [DisplayName("Valor")]
         public decimal PrecoSubTotal
         {
             get
@@ -23,7 +28,7 @@
 
         public ItemDoCarrinho()
         {
-            Id_Carrinho = 0;
+            Id_itemCarrinho = 0;
             Quantidade = 0;
             Produto = new Produto();
         }

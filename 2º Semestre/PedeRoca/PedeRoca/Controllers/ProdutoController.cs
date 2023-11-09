@@ -56,19 +56,19 @@ namespace PedeRoca.Controllers
 
         // GET: ProdutoController/Edit/5
         [HttpGet]
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int idProduto)
         {
-            return View();
+            return View(this.repository.DetailsProdutoID(idProduto));
         }
 
         // POST: ProdutoController/Edit/5 - Alterar Produto
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Produto produto)
+        public IActionResult Edit(int idProduto, Produto produto)
         {
             try
             {
-                this.repository.AlterarProduto(id, produto);
+                this.repository.AlterarProduto(idProduto, produto);
                 return RedirectToAction(nameof(Index));
             }
             catch

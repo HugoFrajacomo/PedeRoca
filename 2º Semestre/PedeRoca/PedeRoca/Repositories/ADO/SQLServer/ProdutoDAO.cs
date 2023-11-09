@@ -23,14 +23,14 @@ namespace PedeRoca.Repositories.ADO.SQLServer
 
             using (SqlConnection connection = new SqlConnection(this.connectionString))
             {
-                //Abrir a conexão do bando de dados: CarroDB
+                //Abrir a conexão do bando de dados: PedeRoça
                 connection.Open();
 
                 // Instrodução do comando SQL
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "SELECT id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario,unidade, tipo_produto, ativo FROM tb_produtos";
+                    command.CommandText = "SELECT id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario, unidade, tipo_produto, ativo FROM tb_produtos";
 
                     //Onde será retornada a informação da consulta do banco
                     SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
