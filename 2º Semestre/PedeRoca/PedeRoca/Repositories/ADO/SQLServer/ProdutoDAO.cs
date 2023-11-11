@@ -16,7 +16,8 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
 
         //--------------------------Metodos--------------------------
-        //-------------Listar todos os Produtos----------------------
+        //------------- Listar todos os Produtos---------------------
+        #region "Listar todos os Produtos"
         public List<Models.Entities.Produto> ListarTodosProdutos()
         {
             List<Produto> produtos = new List<Produto>();
@@ -56,9 +57,12 @@ namespace PedeRoca.Repositories.ADO.SQLServer
             }
             return produtos;
         }
+        #endregion
 
+        //------------- Listar Produtos por ID ----------------------
+        #region "Listar produtos por ID"
         //Metodo para retornar somente um objeto pelo ID - GET -Detail
-        public Models.Entities.Produto DetailsProdutoID(int idProduto)
+        public Models.Entities.Produto DetailsProdutoID(int id)
         {
             Produto produto = new Produto();
             using (SqlConnection connection = new SqlConnection(this.connectionString))
@@ -67,8 +71,8 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario,unidade, tipo_produto, ativo FROM tb_produtos where id_produto=@idProduto;";
-                    command.Parameters.Add(new SqlParameter("@idProduto", System.Data.SqlDbType.Int)).Value = idProduto;
+                    command.CommandText = "select id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario,unidade, tipo_produto, ativo FROM tb_produtos where id_produto=@id;";
+                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     //Onde será retornada a informação da consulta do banco
                     SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
@@ -90,7 +94,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
             }
             return produto;
         }
+        #endregion
 
+        //------------- Inserir Produtos ----------------------------
+        #region "Inserir Produtos"
         //Metodo para Inserir um produto
         public void InserirProduto(Produto produto)
         {
@@ -100,14 +107,14 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "Insert into [dbo].[tb_produtos] (nome, descricao, imagem, qtd_estoque, preco_unitario,unidade, tipo_produto, ativo) values (@nome, @descricao, @imagem, @qtd_estoque, @preco_unitario, @unidade, @tipo_produto, @ativo); select convert(int,@@identity) as id;;";
+                    command.CommandText = "Insert into tb_produtos (nome, descricao, imagem, qtd_estoque, preco_unitario, unidade, tipo_produto, ativo) values (@nome, @descricao, @imagem, @qtd_estoque, @preco_unitario, @unidade, @tipo_produto, @ativo); select convert(int,@@identity) as id;;";
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = produto.Nome;
                     command.Parameters.Add(new SqlParameter("@descricao", System.Data.SqlDbType.VarChar)).Value = produto.Descricao;
                     command.Parameters.Add(new SqlParameter("@imagem", System.Data.SqlDbType.VarChar)).Value = produto.Imagem;
                     command.Parameters.Add(new SqlParameter("@qtd_estoque", System.Data.SqlDbType.Int)).Value = produto.QtdEstoque;
                     command.Parameters.Add(new SqlParameter("@preco_unitario", System.Data.SqlDbType.Decimal)).Value = produto.PrecoUnitario;
-                    command.Parameters.Add(new SqlParameter("@unidade", System.Data.SqlDbType.Int)).Value = produto.Unidade;
-                    command.Parameters.Add(new SqlParameter("@tipo_produto", System.Data.SqlDbType.Bit)).Value = produto.Tipo;
+                    command.Parameters.Add(new SqlParameter("@unidade", System.Data.SqlDbType.Int)).Value = Convert.ToInt32(produto.Unidade);
+                    command.Parameters.Add(new SqlParameter("@tipo_produto", System.Data.SqlDbType.Int)).Value = produto.Tipo;
                     command.Parameters.Add(new SqlParameter("@ativo", System.Data.SqlDbType.Int)).Value = produto.Ativo;
 
                     produto.Id_produtos = (int)command.ExecuteScalar();
@@ -115,7 +122,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 }
             }
         }
-        //Metodo para Alterar um Produto existente
+        #endregion
+
+        //------------- Alterar Produtos ----------------------------
+        #region "Alterar Produtos"
         public void AlterarProduto(int id, Produto produto)
         {
             using (SqlConnection connection = new SqlConnection(this.connectionString))
@@ -124,22 +134,26 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update nome = @nome, descricao = @descricao, imagem = @imagem, qtd_estoque = @qtd_estoque, preco_unitario = @preco_unitario,unidade = @unidade, tipo_produto = @tipo_produto, ativo = @ativo FROM tb_produtos where id_produto=@id;";
+                    command.CommandText = "UPDATE tb_produtos SET nome = @nome, descricao = @descricao, imagem = @imagem, qtd_estoque = @qtd_estoque, preco_unitario = @preco_unitario, unidade = @unidade, tipo_produto = @tipo_produto, ativo = @ativo WHERE id_produto = @id;";
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = produto.Nome;
                     command.Parameters.Add(new SqlParameter("@descricao", System.Data.SqlDbType.VarChar)).Value = produto.Descricao;
                     command.Parameters.Add(new SqlParameter("@imagem", System.Data.SqlDbType.VarChar)).Value = produto.Imagem;
                     command.Parameters.Add(new SqlParameter("@qtd_estoque", System.Data.SqlDbType.Int)).Value = produto.QtdEstoque;
                     command.Parameters.Add(new SqlParameter("@preco_unitario", System.Data.SqlDbType.Decimal)).Value = produto.PrecoUnitario;
-                    command.Parameters.Add(new SqlParameter("@unidade", System.Data.SqlDbType.Int)).Value = produto.Unidade;
-                    command.Parameters.Add(new SqlParameter("@tipo_produto", System.Data.SqlDbType.Bit)).Value = produto.Tipo;
+                    command.Parameters.Add(new SqlParameter("@unidade", System.Data.SqlDbType.Int)).Value = Convert.ToInt32(produto.Unidade);
+                    command.Parameters.Add(new SqlParameter("@tipo_produto", System.Data.SqlDbType.Int)).Value = produto.Tipo;
                     command.Parameters.Add(new SqlParameter("@ativo", System.Data.SqlDbType.Int)).Value = produto.Ativo;
+                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     command.ExecuteNonQuery();
 
                 }
             }
         }
+        #endregion
 
+        //------------- Deletar Produtos ----------------------------
+        #region "Deletar Produtos"
         //Metodo para Deletar um Produto
         public void ExcluirProduto(int id)
         {
@@ -156,5 +170,6 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 }
             }
         }
+        #endregion
     }
 }

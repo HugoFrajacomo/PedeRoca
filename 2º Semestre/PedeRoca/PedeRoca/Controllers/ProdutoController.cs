@@ -17,20 +17,31 @@ namespace PedeRoca.Controllers
             this.repository = new Repositories.ADO.SQLServer.ProdutoDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
         }
 
+        //----------------------------- Listar Todos -------------------------------
+        #region "Listar Produtos"
         // GET: ProdutoController - ListarTodosProdutos
         [HttpGet]
         public IActionResult Index()
         {
             return View(this.repository.ListarTodosProdutos());
         }
+        #endregion
 
-        // GET: ProdutoController - Details por ID //Imformaçao por ID
+        //----------------------------- Listar Por ID ------------------------------
+        #region "Listar Produtos por ID"
+        // Post: ProdutoController - Details por ID //Imformaçao por ID
         [HttpGet]
-        public IActionResult Details(int idProduto)
+        public IActionResult Details(int id)
         {
-            return View(this.repository.DetailsProdutoID(idProduto));
+            return View(this.repository.DetailsProdutoID(id));
         }
 
+
+        //----------------------------- Listar Por ID ------------------------------
+        #endregion
+
+        //----------------------------- Create -------------------------------------
+        #region "Criar Produto"
         // GET: ProdutoController/Create
         [HttpGet]
         public IActionResult Create()
@@ -53,22 +64,25 @@ namespace PedeRoca.Controllers
                 return View();
             }
         }
+        #endregion
 
+        //----------------------------- Edit ---------------------------------------
+        #region "Editar Produto"
         // GET: ProdutoController/Edit/5
         [HttpGet]
-        public ActionResult Edit(int idProduto)
+        public ActionResult Edit(int id)
         {
-            return View(this.repository.DetailsProdutoID(idProduto));
+            return View(this.repository.DetailsProdutoID(id));
         }
 
         // POST: ProdutoController/Edit/5 - Alterar Produto
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int idProduto, Produto produto)
+        public IActionResult Edit(int id, Produto produto)
         {
             try
             {
-                this.repository.AlterarProduto(idProduto, produto);
+                this.repository.AlterarProduto(id, produto);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -76,7 +90,10 @@ namespace PedeRoca.Controllers
                 return View();
             }
         }
+        #endregion
 
+        //----------------------------- Delete -------------------------------------
+        #region "Excluir Produto"
         // GET: ProdutoController/Delete/5 - Excluir Produto pelo ID
         [HttpGet]
         public IActionResult Delete(int id)
@@ -84,5 +101,6 @@ namespace PedeRoca.Controllers
             this.repository.ExcluirProduto(id);
             return RedirectToAction(nameof(Index));
         }
+        #endregion
     }
 }

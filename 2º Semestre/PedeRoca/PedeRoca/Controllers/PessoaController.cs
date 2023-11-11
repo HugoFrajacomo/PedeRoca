@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PedeRoca.Integracao;
 using PedeRoca.Models.Entities;
+using System.Drawing;
 
 namespace PedeRoca.Controllers
 {
@@ -15,20 +17,28 @@ namespace PedeRoca.Controllers
             this.repository = new Repositories.ADO.SQLServer.PessoaDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
         }
 
+        //----------------------------- Listar Todos -------------------------------
+        #region "Listar todos usuário"
         // GET: PessoaController - ListarTodosProdutos
         [HttpGet]
         public IActionResult Index()
         {
             return View(this.repository.ListarPessoas());
         }
+        #endregion
 
+        //----------------------------- Listar Por ID ------------------------------
+        #region "Listar usuários por ID"
         // GET: PessoaController - Details por ID //Imformaçao por ID
         [HttpGet]
         public IActionResult Details(int idPessoa)
         {
             return View(this.repository.DetailsPessoaID(idPessoa));
         }
+        #endregion
 
+        //----------------------------- Create -------------------------------------
+        #region "Criar Usuário"
         // GET: PessoaController/Create
         [HttpGet]
         public IActionResult Create()
@@ -51,7 +61,10 @@ namespace PedeRoca.Controllers
                 return View();
             }
         }
+        #endregion
 
+        //----------------------------- Edit ---------------------------------------
+        #region "Editor Usuário"
         // GET: PessoaController/Edit/5
         [HttpGet]
         public ActionResult Edit(int id)
@@ -74,7 +87,10 @@ namespace PedeRoca.Controllers
                 return View();
             }
         }
+        #endregion
 
+        //----------------------------- Delete -------------------------------------
+        #region "Excluir Usuário"
         // GET: PessoaController/Delete/5 - Excluir Produto pelo ID
         [HttpGet]
         public IActionResult Delete(int id)
@@ -82,5 +98,7 @@ namespace PedeRoca.Controllers
             this.repository.ExcluirPessoa(id);
             return RedirectToAction(nameof(Index));
         }
+        #endregion
+
     }
 }

@@ -1,3 +1,9 @@
+using PedeRoca.Integracao.Refit;
+using System.Security.Policy;
+using Refit;
+using PedeRoca.Integracao.Interfaces;
+using PedeRoca.Integracao;
+
 namespace PedeRoca
 {
     public class Program
@@ -8,6 +14,16 @@ namespace PedeRoca
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // API - Correios
+            #region "API -> Correios"
+            builder.Services.AddScoped<IViaCepIntegracao, ViaCepIntegracao>();
+
+            builder.Services.AddRefitClient<IViaCepIntegracaoRefit>().ConfigureHttpClient(c =>
+            {
+                c.BaseAddress = new Uri("https://viacep.com.br");
+            });
+            #endregion
 
             var app = builder.Build();
 
@@ -28,7 +44,7 @@ namespace PedeRoca
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Produto}/{action=Index}/{id?}");
+                pattern: "{controller=Pessoa}/{action=Index}/{id?}");
 
             app.Run();
         }

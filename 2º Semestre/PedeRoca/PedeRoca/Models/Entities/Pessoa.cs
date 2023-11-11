@@ -22,6 +22,7 @@ namespace PedeRoca.Models.Entities
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
+        [DataType(DataType.Date)]
         public DateTime DataNasc { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -33,12 +34,13 @@ namespace PedeRoca.Models.Entities
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
-        [StringLength(25, MinimumLength = 2)]
-        public string UF { get; set; }
-
-        [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(200, MinimumLength = 1)]
         public string Logradouro { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
+        [StringLength(2, MinimumLength = 2, ErrorMessage = "Use a sigla com 2 caracteres")]
+        public string UF { get; set; }
+
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         public int Numero { get; set; }
 
@@ -59,8 +61,10 @@ namespace PedeRoca.Models.Entities
         public bool Notific_SMS { get; set; }
         public bool Notific_Email { get; set; }
         public bool Status { get; set; }
+        [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         public NivelDeAcesso Tipo { get; set; }
         public Favoritos Favoritos { get; set; }
+
 
 
         //Construtor
@@ -73,7 +77,8 @@ namespace PedeRoca.Models.Entities
             DataNasc = DateTime.Now;
             Email = string.Empty;
             CPF = string.Empty;
-            UF = string.Empty;
+            CEP = string.Empty;
+            UF = UnidadesFederativas.SP;
             Logradouro = string.Empty;
             Numero = 0;
             Cidade = string.Empty;

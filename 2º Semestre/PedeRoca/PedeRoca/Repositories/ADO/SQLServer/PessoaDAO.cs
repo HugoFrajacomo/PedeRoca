@@ -16,7 +16,8 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
 
         //--------------------------Metodos--------------------------
-        //-------------Listar todos os Produtos----------------------
+        //------------- Listar Todos Usuários------------------------
+        #region "Listar todos usuários"
         public List<Models.Entities.Pessoa> ListarPessoas()
         {
             List<Pessoa> pessoas = new List<Models.Entities.Pessoa>();
@@ -30,7 +31,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "SELECT * FROM tb_usuarios";
+                    command.CommandText = "SELECT id_usuario, nome, cpf, telefone, data_nascimento, e_maiL, cep, cidade, uf, logradouro, bairro, numero, complemento, senha, notific_WP, notific_SMS, notific_Email, ativo, nivel_acesso FROM tb_usuarios";
 
                     //Onde será retornada a informação da consulta do banco
                     SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
@@ -46,8 +47,8 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                         pessoa.DataNasc = (DateTime)dr["data_nascimento"];
                         pessoa.Email = (string)dr["e_maiL"];
                         pessoa.CEP = (string)dr["cep"];
-                        pessoa.UF = (string)dr["uf"];
                         pessoa.Cidade = (string)dr["cidade"];
+                        pessoa.UF = (string)dr["uf"];
                         pessoa.Logradouro = (string)dr["logradouro"];
                         pessoa.Bairro = (string)dr["bairro"];
                         pessoa.Numero = (int)dr["numero"];
@@ -60,13 +61,17 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                         pessoa.Tipo = (NivelDeAcesso)dr["nivel_acesso"];
 
 
+
                         pessoas.Add(pessoa);
                     }
                 }
             }
             return pessoas;
         }
+        #endregion
 
+        //------------- Listar Usuários por ID-----------------------
+        #region "Listar Usuários por ID"
         //Metodo para retornar somente um objeto pelo ID - GET -Detail
         public Models.Entities.Pessoa DetailsPessoaID(int idPessoa)
         {
@@ -110,7 +115,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
             }
             return pessoa;
         }
+        #endregion
 
+        //------------- Inserir Usuário -----------------------------
+        #region "Inserir Usuário"
         //Metodo para Inserir uma Pessoa
         public void InserirPessoa(Pessoa pessoa)
         {
@@ -145,6 +153,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 }
             }
         }
+        #endregion
+
+        //------------- Alterar Usuário -----------------------------
+        #region "Alterar Usuário"
         //Metodo para Alterar um Pessoa existente
         public void AlterarPessoa(int id, Pessoa pessoa)
         {
@@ -180,7 +192,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 }
             }
         }
+        #endregion
 
+        //------------- Deletar Usuário -----------------------------
+        #region "Deletar Usuário"
         //Metodo para Deletar uma Pessoa
         public void ExcluirPessoa(int id)
         {
@@ -205,5 +220,6 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 }
             }
         }
+        #endregion
     }
 }

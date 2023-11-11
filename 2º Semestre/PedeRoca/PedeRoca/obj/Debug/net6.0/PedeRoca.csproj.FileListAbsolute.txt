@@ -741,3 +741,18 @@ C:\Users\Hugo Frajacomo\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Pr
 C:\Users\Hugo Frajacomo\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\obj\Debug\net6.0\PedeRoca.pdb
 C:\Users\Hugo Frajacomo\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\obj\Debug\net6.0\PedeRoca.genruntimeconfig.cache
 C:\Users\Hugo Frajacomo\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\obj\Debug\net6.0\ref\PedeRoca.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\AngleSharp.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Correios.NET.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Refit.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\Refit.HttpClientFactory.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\System.Net.Http.Json.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\System.Text.Json.dll
+D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
