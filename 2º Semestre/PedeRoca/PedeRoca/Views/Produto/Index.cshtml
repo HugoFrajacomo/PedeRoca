@@ -3,60 +3,43 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div class="formatacaoTabelas">
-    <h1>Index</h1>
-
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Id_produtos)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.QtdEstoque)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PrecoUnitario)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Ativo)
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Id_produtos)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nome)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.QtdEstoque)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.PrecoUnitario)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Ativo)
-                    </td>
-                    <td>
-                        <i class="bi bi-pencil-square"> </i>@Html.ActionLink("Editar", "Edit", new { id=item.Id_produtos }) |
-                        <i class="bi bi-card-checklist"> </i>@Html.ActionLink("Info", "Details", new { id=item.Id_produtos }) |
-                        <i class="bi bi-folder-x"></i> @Html.ActionLink("Excluir", "Delete", new { id=item.Id_produtos })
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
-
+<section id="Cartoes" class="px-2 py-2 d-flex flex-wrap gap-3 justify-content-center align-content-center">
+    @foreach (var item in Model)
+    {
+        <div class="geralCard">
+            <div class="posicaoPreco">
+                <span id="precoProduto1" class="tagMoeda">@Html.DisplayNameFor(model => model.PrecoUnitario)</span>
+            </div>
+            <div class="posicaoFavorito">
+                <button id="boxFavoritoF1" onclick="trocarIcone('F1')">
+                    <i class="bi bi-heart tamanhoFavorito"
+                       id="favoritoF1"></i>
+                </button>
+            </div>
+            <div class="imagemVenda">
+                <img class="card-img-top tamanhoImgVenda" src="@Html.DisplayFor(modelItem => item.Imagem)/>" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+                <h5>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </h5>
+                <p>
+                            @Html.DisplayFor(modelItem => item.Descricao)
+                </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+                <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1"
+                           id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(1)">
+                    <span class="inputBorda valorTotalProduto" id="valorTotalProduto1"></span>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btnComprar">Comprar</button>
+                    <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
+                </div>
+            </div>
+        </div>
+    }
+</section>

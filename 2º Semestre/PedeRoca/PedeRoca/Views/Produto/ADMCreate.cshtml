@@ -1,0 +1,73 @@
+﻿@model PedeRoca.Models.Entities.Produto
+
+@{
+    ViewData["Title"] = "ADMCreate";
+    Layout = "~/Views/Shared/_LayoutADM.cshtml";
+}
+<h1 class="titulo_ADMTable">Cadastro de Produtos</h1>
+
+<div class="formatacaoTabelas">
+
+
+    <h4 class="sub_tituloADM">Produto</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="ADMCreate">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Nome" class="control-label label_ADM"></label>
+                    <input asp-for="Nome" class="form-control" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Descricao" class="control-label label_ADM"></label>
+                    <input asp-for="Descricao" class="form-control" />
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Imagem" class="control-label label_ADM"></label>
+                    <input asp-for="Imagem" class="form-control" />
+                    <span asp-validation-for="Imagem" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="QtdEstoque" class="control-label label_ADM"></label>
+                    <input asp-for="QtdEstoque" class="form-control" />
+                    <span asp-validation-for="QtdEstoque" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PrecoUnitario" class="control-label label_ADM"></label>
+                    <input asp-for="PrecoUnitario" class="form-control" />
+                    <span asp-validation-for="PrecoUnitario" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Unidade" class="control-label label_ADM"></label>
+                    <select asp-for="Unidade" asp-items="Html.GetEnumSelectList<UnidadeProdutos>()" class="form-control"></select>
+                    <span asp-validation-for="Unidade" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Tipo" class="control-label label_ADM"></label>
+                    <select asp-for="Tipo" asp-items="Html.GetEnumSelectList<TiposProdutos>()" class="form-control"></select>
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label label_ADM">
+                        <input class="form-check-input" asp-for="Ativo" /> @Html.DisplayNameFor(model => model.Ativo)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Adicionar" class="btn btn_ADMSalvar"  />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="ADMProduto">Voltar</a>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -15,10 +15,12 @@ namespace PedeRoca.Models.Entities
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(11, MinimumLength = 10, ErrorMessage = "Máximo de 11 caracteres.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(11, MinimumLength = 1, ErrorMessage = "Máximo de 11 caracteres.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -31,6 +33,7 @@ namespace PedeRoca.Models.Entities
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(8, MinimumLength = 8)]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -57,8 +60,11 @@ namespace PedeRoca.Models.Entities
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(50, MinimumLength = 6, ErrorMessage = "Mínimo de 6")]
         public string Senha { get; set; }
+        [DisplayName("Notificação por WhatsApp")]
         public bool Notific_WP { get; set; }
+        [DisplayName("Notificação por SMS")]
         public bool Notific_SMS { get; set; }
+        [DisplayName("Notificação por Email")]
         public bool Notific_Email { get; set; }
         public bool Status { get; set; }
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -78,7 +84,7 @@ namespace PedeRoca.Models.Entities
             Email = string.Empty;
             CPF = string.Empty;
             CEP = string.Empty;
-            UF = UnidadesFederativas.SP;
+            UF = string.Empty;
             Logradouro = string.Empty;
             Numero = 0;
             Cidade = string.Empty;

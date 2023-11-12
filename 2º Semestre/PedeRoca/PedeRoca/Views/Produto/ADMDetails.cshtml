@@ -1,0 +1,77 @@
+﻿@model PedeRoca.Models.Entities.Produto
+
+@{
+    ViewData["Title"] = "ADMDetails";
+    Layout = "~/Views/Shared/_LayoutADM.cshtml";
+}
+<h1 class="titulo_ADMTable">Detalhes do Produto</h1>
+
+<div class="formatacaoTabelas">
+
+
+    <div>
+        <h4 class="sub_tituloADM">Produto</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Id_produtos)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Id_produtos)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Imagem)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Imagem)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.QtdEstoque)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.QtdEstoque)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.PrecoUnitario)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.PrecoUnitario)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Unidade)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Unidade)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Tipo)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Tipo)
+            </dd>
+            <dt class="col-sm-2 label_ADMDetail">
+                @Html.DisplayNameFor(model => model.Ativo)
+            </dt>
+            <dd class="col-sm-10 label_ADMDetailR">
+                @Html.DisplayFor(model => model.Ativo)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        @Html.ActionLink("Editar", "ADMEdit", new { id = Model.Id_produtos}) |
+        <a asp-action="ADMProduto">Back to List</a>
+    </div>
+</div>
+

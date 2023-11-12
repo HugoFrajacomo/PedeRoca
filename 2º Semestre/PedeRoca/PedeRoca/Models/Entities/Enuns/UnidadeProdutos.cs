@@ -6,6 +6,7 @@
         Duzia = 2,
         Unitário = 3,
         Kg = 4,
-        Litro = 5
+        Litro = 5,
+        Cacho = 6
     }
 }

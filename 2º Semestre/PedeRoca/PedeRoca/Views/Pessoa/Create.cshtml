@@ -1,11 +1,11 @@
-﻿@using PedeRoca.Models.Entities.Enuns
-@model PedeRoca.Models.Entities.Pessoa
+﻿@model PedeRoca.Models.Entities.Pessoa
 
 @{
     ViewData["Title"] = "Create";
 }
 
 <div class="formatacaoTabelas">
+
     <h1>Create</h1>
 
     <h4>Pessoa</h4>
@@ -45,14 +45,14 @@
                     <span asp-validation-for="CEP" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="UF" class="control-label"></label>
-                    <input asp-for="UF" class="form-control" />
-                    <span asp-validation-for="UF" class="text-danger"></span>
-                </div>
-                <div class="form-group">
                     <label asp-for="Logradouro" class="control-label"></label>
                     <input asp-for="Logradouro" class="form-control" />
                     <span asp-validation-for="Logradouro" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UF" class="control-label"></label>
+                    <input asp-for="UF" class="form-control" />
+                    <span asp-validation-for="UF" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Numero" class="control-label"></label>

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/estilo.css" asp-append-version="true" />
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.7/datatables.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,7 +15,8 @@
         <!--  HEADER MOBILE-->
         <nav>
             <div class="caixaLogoM d-md-none">
-                <img class="ajusteLogoMobile" src="~/Imagens/Logo - Pede Roça2.svg" alt="Pede Roça">
+                <img src="~/imagens/logo/logo - pede roça.svg" class="ajusteLogoMobile" alt="Pede Roça"/>
+                @* <img class="ajusteLogoMobile" src=" ~ /imagens/logo/logo - pede roça.svg" alt="Pede Roça"> *@
             </div>
         </nav>
 
@@ -62,7 +64,7 @@
                 </div>
                 <div id="navbarNav">
                     <a class="nav-item linkPadraoNav" href="index.html">
-                        <img class="ajusteLogo" src="../Imagens//Logo - Pede Roça2.svg" alt="Pede Roça">
+                        <img src="~/imagens/logo/logo - pede roça.svg " class="ajusteLogo" alt="Pede Roça" />
                     </a>
                 </div>
                 <div id="navbarNav" class="bgLinksNav">
@@ -88,7 +90,7 @@
 
     <span class="fimPaginaMobile d-md-none"></span>
 
-    <footer id="footer" class="d-none d-md-block">
+    <footer id="footer" class="d-none d-md-block fixed-bottom">
         <p class="footerText">
             <i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel
             - Fatec Matão
@@ -96,6 +98,7 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.7/datatables.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

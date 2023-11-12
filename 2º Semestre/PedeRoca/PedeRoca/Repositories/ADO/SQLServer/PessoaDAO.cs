@@ -16,7 +16,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
 
         //--------------------------Metodos--------------------------
-        //------------- Listar Todos Usuários------------------------
+        //------------- Listar Todos Usuários------------------------ ok
         #region "Listar todos usuários"
         public List<Models.Entities.Pessoa> ListarPessoas()
         {
@@ -70,10 +70,10 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Listar Usuários por ID-----------------------
-        #region "Listar Usuários por ID"
+        //------------- Listar Usuários por ID----------------------- ok
+        #region "Listar Pessoa por ID"
         //Metodo para retornar somente um objeto pelo ID - GET -Detail
-        public Models.Entities.Pessoa DetailsPessoaID(int idPessoa)
+        public Models.Entities.Pessoa DetailsPessoaID(int id)
         {
             Pessoa pessoa = new Pessoa();
             using (SqlConnection connection = new SqlConnection(this.connectionString))
@@ -82,8 +82,8 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select [id_usuario], [nome], [cpf], [telefone], [data_nascimento], [e_maiL], [cep], [uf], [cidade], [logradouro], [bairro], [numero], [complemento], [senha], [notific_WP], [notific_SMS], [notific_Email], [ativo], [nivel_acesso]  FROM tb_usuarios where id_usuario=@idPessoa;";
-                    command.Parameters.Add(new SqlParameter("@idPessoa", System.Data.SqlDbType.Int)).Value = idPessoa;
+                    command.CommandText = "select id_usuario, nome, cpf, telefone, data_nascimento, e_maiL, cep, uf, cidade, logradouro, bairro, numero, complemento, senha, notific_WP, notific_SMS, notific_Email, ativo, nivel_acesso FROM tb_usuarios where id_usuario=@id;";
+                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     //Onde será retornada a informação da consulta do banco
                     SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
@@ -91,7 +91,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     //Passando os dados do banco para o objeto
                     if (dr.Read())
                     {
-                        pessoa.Id_usuario = (int)dr["id_produto"];
+                        pessoa.Id_usuario = (int)dr["id_usuario"];
                         pessoa.Nome = (string)dr["nome"];
                         pessoa.CPF = (string)dr["cpf"];
                         pessoa.Telefone = (string)dr["telefone"];
@@ -103,12 +103,12 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                         pessoa.Logradouro = (string)dr["logradouro"];
                         pessoa.Bairro = (string)dr["bairro"];
                         pessoa.Numero = (int)dr["numero"];
-                        pessoa.Complemento = (string)dr["complemento"];
+                        pessoa.Complemento = dr["complemento"] != DBNull.Value ? (string)dr["complemento"] : null;
                         pessoa.Senha = (string)dr["senha"];
-                        pessoa.Notific_WP = (Boolean)dr["notific_WP"];
-                        pessoa.Notific_SMS = (Boolean)dr["notific_SMS"];
-                        pessoa.Notific_Email = (Boolean)dr["notific_Email"];
-                        pessoa.Status = (Boolean)dr["ativo"];
+                        pessoa.Notific_WP = (bool)dr["notific_WP"];
+                        pessoa.Notific_Email = (bool)dr["notific_SMS"];
+                        pessoa.Notific_SMS = (bool)dr["notific_Email"];
+                        pessoa.Status = (bool)dr["ativo"];
                         pessoa.Tipo = (NivelDeAcesso)dr["nivel_acesso"];
                     }
                 }
@@ -117,7 +117,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Inserir Usuário -----------------------------
+        //------------- Inserir Usuário ----------------------------- ok
         #region "Inserir Usuário"
         //Metodo para Inserir uma Pessoa
         public void InserirPessoa(Pessoa pessoa)
@@ -128,7 +128,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "Insert into tb_usuarios ([nome], [cpf], [telefone], [data_nascimento], [e_maiL],[cep], [uf], [cidade], [logradouro], [bairro], [numero], [complemento], [senha], [notific_WP], [notific_SMS], [notific_Email], [ativo], [nivel_acesso] ) values ([nome]=@nome, [cpf]=@cpf, [telefone]=@telefone, [data_nascimento]=@data_nascimento, [e_maiL]=@e_maiL,[cep]=@cep, [uf]=@uf, [cidade]=@cidade, [logradouro]=@logradouro, [bairro]=@bairro, [numero]=@numero, [complemento]=@complemento, [senha]=@senha, [notific_WP]=@notific_WP, [notific_SMS]=@notific_SMS, [notific_Email]=@notific_Email, [ativo]=@ativo, [nivel_acesso]=@nivel_acesso); select convert(int,@@identity) as id;;";
+                    command.CommandText = "INSERT INTO tb_usuarios (nome, cpf, telefone, data_nascimento, e_maiL, cep, uf, cidade, logradouro, bairro, numero, complemento, senha, notific_WP, notific_SMS, notific_Email, ativo, nivel_acesso ) VALUES (@nome, @cpf, @telefone, @data_nascimento, @e_maiL, @cep, @uf, @cidade, @logradouro, @bairro, @numero, @complemento, @senha, @notific_WP, @notific_SMS, @notific_Email, @ativo, @nivel_acesso); select convert(int,@@identity) as id;;";
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
@@ -155,7 +155,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Alterar Usuário -----------------------------
+        //------------- Alterar Usuário ----------------------------- * verificar
         #region "Alterar Usuário"
         //Metodo para Alterar um Pessoa existente
         public void AlterarPessoa(int id, Pessoa pessoa)
@@ -166,7 +166,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "update [nome]=@nome, [cpf]=@cpf, [telefone]=@telefone, [data_nascimento]=@data_nascimento, [e_maiL]=@e_maiL,[cep]=@cep, [uf]=@uf, [cidade]=@cidade, [logradouro]=@logradouro, [bairro]=@bairro, [numero]=@numero, [complemento]=@complemento, [senha]=@senha, [notific_WP]=@notific_WP, [notific_SMS]=@notific_SMS, [notific_Email]=@notific_Email, [ativo]=@ativo, [nivel_acesso]=@nivel_acesso FROM tb_produtos where id_usuario=@id;";
+                    command.CommandText = "UPDATE tb_usuarios SET nome = @nome, cpf = @cpf, telefone = @telefone, data_nascimento = @data_nascimento, e_maiL = @e_maiL, cep = @cep, uf = @uf, cidade = @cidade, logradouro = @logradouro, bairro = @bairro, numero = @numero, complemento = @complemento, senha = @senha, notific_WP = @notific_WP, notific_SMS = @notific_SMS, notific_Email = @notific_Email, ativo = @ativo, nivel_acesso = @nivel_acesso WHERE id_usuario=@id;";
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
@@ -194,7 +194,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Deletar Usuário -----------------------------
+        //------------- Deletar Usuário ----------------------------- ok
         #region "Deletar Usuário"
         //Metodo para Deletar uma Pessoa
         public void ExcluirPessoa(int id)

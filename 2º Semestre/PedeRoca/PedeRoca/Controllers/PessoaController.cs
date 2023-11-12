@@ -17,7 +17,7 @@ namespace PedeRoca.Controllers
             this.repository = new Repositories.ADO.SQLServer.PessoaDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
         }
 
-        //----------------------------- Listar Todos -------------------------------
+        //----------------------------- Listar Todos ------------------------------- ok
         #region "Listar todos usuário"
         // GET: PessoaController - ListarTodosProdutos
         [HttpGet]
@@ -27,17 +27,17 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Listar Por ID ------------------------------
+        //----------------------------- Listar Por ID ------------------------------ ok
         #region "Listar usuários por ID"
         // GET: PessoaController - Details por ID //Imformaçao por ID
         [HttpGet]
-        public IActionResult Details(int idPessoa)
+        public IActionResult Details(int id)
         {
-            return View(this.repository.DetailsPessoaID(idPessoa));
+            return View(this.repository.DetailsPessoaID(id));
         }
         #endregion
 
-        //----------------------------- Create -------------------------------------
+        //----------------------------- Create ------------------------------------- ok
         #region "Criar Usuário"
         // GET: PessoaController/Create
         [HttpGet]
@@ -63,16 +63,16 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Edit ---------------------------------------
+        //----------------------------- Edit --------------------------------------- * verificar
         #region "Editor Usuário"
         // GET: PessoaController/Edit/5
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(this.repository.DetailsPessoaID(id));
         }
 
-        // POST: PessoaController/Edit/5 - Alterar Produto
+        // POST: PessoaController/Edit/5 - Alterar Pèssoa
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Pessoa pessoa)
@@ -89,7 +89,7 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Delete -------------------------------------
+        //----------------------------- Delete ------------------------------------- ok
         #region "Excluir Usuário"
         // GET: PessoaController/Delete/5 - Excluir Produto pelo ID
         [HttpGet]

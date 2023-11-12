@@ -16,7 +16,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
 
         //--------------------------Metodos--------------------------
-        //------------- Listar todos os Produtos---------------------
+        //------------- Listar todos os Produtos--------------------- ok
         #region "Listar todos os Produtos"
         public List<Models.Entities.Produto> ListarTodosProdutos()
         {
@@ -59,7 +59,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Listar Produtos por ID ----------------------
+        //------------- Listar Produtos por ID ---------------------- ok
         #region "Listar produtos por ID"
         //Metodo para retornar somente um objeto pelo ID - GET -Detail
         public Models.Entities.Produto DetailsProdutoID(int id)
@@ -96,7 +96,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Inserir Produtos ----------------------------
+        //------------- Inserir Produtos ---------------------------- ok
         #region "Inserir Produtos"
         //Metodo para Inserir um produto
         public void InserirProduto(Produto produto)
@@ -124,7 +124,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Alterar Produtos ----------------------------
+        //------------- Alterar Produtos ---------------------------- ok
         #region "Alterar Produtos"
         public void AlterarProduto(int id, Produto produto)
         {
@@ -152,7 +152,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Deletar Produtos ----------------------------
+        //------------- Deletar Produtos ---------------------------- ok
         #region "Deletar Produtos"
         //Metodo para Deletar um Produto
         public void ExcluirProduto(int id)
