@@ -31,6 +31,48 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
+                    command.CommandText = "SELECT id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario, unidade, tipo_produto, ativo FROM tb_produtos WHERE ativo = 1";
+
+                    //Onde será retornada a informação da consulta do banco
+                    SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
+
+                    //Criando um objeto para cada leitura do banco
+                    while (dr.Read())
+                    {
+                        Produto produto = new Produto();
+                        produto.Id_produtos = (int)dr["id_produto"];
+                        produto.Nome = (string)dr["nome"];
+                        produto.Descricao = (string)dr["descricao"];
+                        produto.Imagem = (string)dr["imagem"];
+                        produto.QtdEstoque = (int)dr["qtd_estoque"];
+                        produto.PrecoUnitario = (decimal)dr["preco_unitario"];
+                        produto.Unidade = (UnidadeProdutos)dr["unidade"];
+                        produto.Tipo = (TiposProdutos)dr["tipo_produto"];
+                        produto.Ativo = (Boolean)dr["ativo"];
+
+
+                        produtos.Add(produto);
+                    }
+                }
+            }
+            return produtos;
+        }
+        #endregion
+        //------------- Listar todos os Produtos ADM----------------- ok
+        #region "Listar todos os Produtos"
+        public List<Models.Entities.Produto> ListarTodosProdutosADM()
+        {
+            List<Produto> produtos = new List<Produto>();
+
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
+            {
+                //Abrir a conexão do bando de dados: PedeRoça
+                connection.Open();
+
+                // Instrodução do comando SQL
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
                     command.CommandText = "SELECT id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario, unidade, tipo_produto, ativo FROM tb_produtos";
 
                     //Onde será retornada a informação da consulta do banco

@@ -34,7 +34,7 @@ namespace PedeRoca.Controllers
         [HttpGet]
         public IActionResult ADMProduto()
         {
-            return View(this.repository.ListarTodosProdutos());
+            return View(this.repository.ListarTodosProdutosADM());
         }
         #endregion
 

@@ -3,12 +3,22 @@
 @{
     ViewData["Title"] = "Index";
 }
+<!------------Filtro de pesquisa--------->
+<nav class="navbar navbar-expand-xxxl sticky-top filtroPesquisa d-flex justify-content-center align-content-center">
+    <form class="d-flex TamanhoFormPesquisa">
+        <input class="form-control flex-grow-1" type="text" placeholder="O que você procura? Busque por Produto/Categoria" aria-label="Search" id="filtroPesquisa">
+        <button class="bgFiltro" type="submit">
+            <i class="bi bi-search corPesquisa"></i>
+        </button>
+    </form>
+</nav>
+
 <section id="Cartoes" class="px-2 py-2 d-flex flex-wrap gap-3 justify-content-center align-content-center">
     @foreach (var item in Model)
     {
-        <div class="geralCard">
+        <div class="geralCard cartaoProduto">
             <div class="posicaoPreco">
-                <span id="precoProduto1" class="tagMoeda">@Html.DisplayNameFor(model => model.PrecoUnitario)</span>
+                <span id="precoProduto1">@Html.DisplayFor(model => item.PrecoUnitario)</span>
             </div>
             <div class="posicaoFavorito">
                 <button id="boxFavoritoF1" onclick="trocarIcone('F1')">
@@ -17,15 +27,16 @@
                 </button>
             </div>
             <div class="imagemVenda">
-                <img class="card-img-top tamanhoImgVenda" src="@Html.DisplayFor(modelItem => item.Imagem)/>" alt="alface">
+                <img class="card-img-top tamanhoImgVenda" src="~/imagens/produtos/@Html.DisplayFor(model => item.Imagem)" alt="@Html.DisplayFor(model => item.Nome)">
             </div>
             <hr>
             <div id="nomeProduto">
                 <h5>
-                    @Html.DisplayFor(modelItem => item.Nome)
+                    @Html.DisplayFor(model => item.Nome)
                 </h5>
                 <p>
-                            @Html.DisplayFor(modelItem => item.Descricao)
+                    @Html.DisplayFor(model => item.Descricao)<br>
+                    <span class="EnfaseProdutoOculto">Categoria: @Html.DisplayFor(model => item.Tipo)</span> <br>
                 </p>
             </div>
             <hr>
@@ -43,3 +54,5 @@
         </div>
     }
 </section>
+
+

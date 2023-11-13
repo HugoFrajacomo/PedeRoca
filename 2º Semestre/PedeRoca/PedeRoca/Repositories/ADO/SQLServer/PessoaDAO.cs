@@ -166,7 +166,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "UPDATE tb_usuarios SET nome = @nome, cpf = @cpf, telefone = @telefone, data_nascimento = @data_nascimento, e_maiL = @e_maiL, cep = @cep, uf = @uf, cidade = @cidade, logradouro = @logradouro, bairro = @bairro, numero = @numero, complemento = @complemento, senha = @senha, notific_WP = @notific_WP, notific_SMS = @notific_SMS, notific_Email = @notific_Email, ativo = @ativo, nivel_acesso = @nivel_acesso WHERE id_usuario=@id;";
+                    command.CommandText = "UPDATE tb_usuarios SET nome=@nome, cpf=@cpf, telefone=@telefone, data_nascimento=@data_nascimento, e_maiL=@e_maiL, cep=@cep, uf=@uf, cidade=@cidade, logradouro=@logradouro, bairro=@bairro, numero=@numero, complemento=@complemento, senha=@senha, notific_WP=@notific_WP, notific_SMS=@notific_SMS, notific_Email=@notific_Email, ativo=@ativo, nivel_acesso=@nivel_acesso WHERE id_usuario=@id;";
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;

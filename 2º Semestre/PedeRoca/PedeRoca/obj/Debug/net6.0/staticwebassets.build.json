@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+Cr+NpdRQCLELKGM/BUs3ai5iy3EC9lUkILOh/S+Zag=",
+  "Hash": "Rn64RLMEf8kJzDAYyVWN4abGc7vbRSjn/GEmzF+tHoA=",
   "Source": "PedeRoca",
   "BasePath": "_content/PedeRoca",
   "Mode": "Default",
@@ -46342,12 +46342,12 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\Logo\\Logo - Pede Roça2.svg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Banana.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Abobora.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Banana.jpg",
+      "RelativePath": "Imagens/Produtos/Abobora.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46356,15 +46356,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Banana.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Abobora.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Limao.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Abobrinha.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Limao.jpg",
+      "RelativePath": "Imagens/Produtos/Abobrinha.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46373,15 +46373,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Limao.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Abobrinha.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Maca.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Alface.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Maca.jpg",
+      "RelativePath": "Imagens/Produtos/Alface.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46390,15 +46390,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Maca.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Alface.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Melancia.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Banana.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Melancia.jpg",
+      "RelativePath": "Imagens/Produtos/Banana.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46407,15 +46407,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Melancia.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Banana.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Pera.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Beringela.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Pera.jpg",
+      "RelativePath": "Imagens/Produtos/Beringela.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46424,15 +46424,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Pera.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Beringela.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Uva.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Cebolinha.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Frutas/Fruta-Uva.jpg",
+      "RelativePath": "Imagens/Produtos/Cebolinha.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46441,15 +46441,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Frutas\\Fruta-Uva.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Cebolinha.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Abobora.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Cenoura.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Abobora.jpg",
+      "RelativePath": "Imagens/Produtos/Cenoura.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46458,15 +46458,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Abobora.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Cenoura.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Abobrinha.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Limao.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Abobrinha.jpg",
+      "RelativePath": "Imagens/Produtos/Limao.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46475,15 +46475,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Abobrinha.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Limao.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Beringela.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Maca.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Beringela.jpg",
+      "RelativePath": "Imagens/Produtos/Maca.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46492,15 +46492,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Beringela.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Maca.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Cenoura.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Melancia.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Cenoura.jpg",
+      "RelativePath": "Imagens/Produtos/Melancia.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46509,15 +46509,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Cenoura.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Melancia.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Pimentao.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Pera.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Pimentao.jpg",
+      "RelativePath": "Imagens/Produtos/Pera.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46526,15 +46526,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Pimentao.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Pera.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Rabanete.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Pimentao.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Legumes/Legume-Rabanete.jpg",
+      "RelativePath": "Imagens/Produtos/Pimentao.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46543,15 +46543,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Legumes\\Legume-Rabanete.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Pimentao.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Alface.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Rabanete.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Alface.jpg",
+      "RelativePath": "Imagens/Produtos/Rabanete.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46560,15 +46560,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Alface.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Rabanete.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Cebolinha.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Repolho.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Cebolinha.jpg",
+      "RelativePath": "Imagens/Produtos/Repolho.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46577,15 +46577,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Cebolinha.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Repolho.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Repolho Roxo.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\RepolhoRoxo.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Repolho Roxo.jpg",
+      "RelativePath": "Imagens/Produtos/RepolhoRoxo.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46594,15 +46594,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Repolho Roxo.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\RepolhoRoxo.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Repolho.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Rucula.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Repolho.jpg",
+      "RelativePath": "Imagens/Produtos/Rucula.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46611,15 +46611,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Repolho.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Rucula.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Rucula.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Salsinha.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Rucula.jpg",
+      "RelativePath": "Imagens/Produtos/Salsinha.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46628,15 +46628,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Rucula.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Salsinha.jpg"
     },
     {
-      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Salsinha.jpg",
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Produtos\\Uva.jpg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
       "BasePath": "_content/PedeRoca",
-      "RelativePath": "Imagens/Produtos/Verduras/Verdura - Salsinha.jpg",
+      "RelativePath": "Imagens/Produtos/Uva.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -46645,7 +46645,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Verduras\\Verdura - Salsinha.jpg"
+      "OriginalItemSpec": "wwwroot\\Imagens\\Produtos\\Uva.jpg"
     },
     {
       "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Sobre\\hist-Desenvolvemento.jpg",
@@ -46714,6 +46714,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\_cardPrecoTotal.js"
+    },
+    {
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\FiltroPesquisa.js",
+      "SourceId": "PedeRoca",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
+      "BasePath": "_content/PedeRoca",
+      "RelativePath": "js/FiltroPesquisa.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\FiltroPesquisa.js"
     },
     {
       "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\JQHelper.js",

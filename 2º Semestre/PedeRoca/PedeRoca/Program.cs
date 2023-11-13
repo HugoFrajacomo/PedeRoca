@@ -44,7 +44,7 @@ namespace PedeRoca
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Produto}/{action=ADMProduto}/{id?}");
+                pattern: "{controller=Produto}/{action=index}/{id?}");
 
             app.Run();
         }

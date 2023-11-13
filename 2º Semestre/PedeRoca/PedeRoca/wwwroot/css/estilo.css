@@ -12,8 +12,12 @@
 
 /*----Estilos das páginas----*/
 /*! ---------------------MAIN-MOBILE-AREA-DE-USUARIO---------------------- !*/
+.bgBranco{
+    background: #f2f2f2;
+}
+
 @media only screen and (max-width: 767px) {
-  .desktopNavbar {
+    .desktopNavbar {
     display: none;
   }
   .main-desktop {
@@ -300,13 +304,25 @@ body {
 
 /*-- Filtro pesquisa ---*/
 .filtroPesquisa {
-  margin: 8px 10px 5px 10px;
+  margin: 10px auto 5px auto;
   border-radius: 10px;
+  background: #f2f2f2;
+  width: 96%;
+}
+
+.TamanhoFormPesquisa{
+    width: 96%;
+}
+
+#filtroPesquisa {
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #7C8C03;
+    min-width: 300px;
 }
 
 .corPesquisa {
-  color: #f2f2f2;
-  font-weight: bold;
+    color: #f2f2f2;
+    font-weight: bold;
 }
 
 .corFiltro {
@@ -318,6 +334,7 @@ body {
   background: #7C8C03;
   border: none;
   padding: 8px 10px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .bgFiltro:hover {
@@ -373,9 +390,7 @@ body {
     padding: 2px 5px;
     border-radius: 5px;
   }
-  .posicaoPreco::before {
-    content: "R$ ";
-  }
+
   #nomeProduto {
     padding: 5px 0px;
   }
@@ -471,9 +486,6 @@ body {
     margin-right: 223px;
     padding: 5px 15px;
     border-radius: 10px 0px 10px 0px;
-  }
-  .posicaoPreco::before {
-    content: "R$ ";
   }
   #nomeProduto {
     padding: 5px 0px;
@@ -1116,5 +1128,16 @@ body {
     margin: 3px 0px;
 }
 
+.EnfaseProduto {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #7C8C03;
+}
 
+.EnfaseProdutoOculto {
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #7C8C03;
+}
 
