@@ -276,7 +276,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "SELECT id FROM tb_usuarios where e_maiL=@e_maiL and senha=@senha"; //ordem dos parâmetros tem que ser iugal a sequencia do Comando SQL
+                    command.CommandText = "SELECT id_usuario FROM tb_usuarios where e_maiL=@e_maiL and senha=@senha"; //ordem dos parâmetros tem que ser iugal a sequencia do Comando SQL
                     command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email; //se atentar pro tipo que está no banco
                     command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = pessoa.Senha;
 

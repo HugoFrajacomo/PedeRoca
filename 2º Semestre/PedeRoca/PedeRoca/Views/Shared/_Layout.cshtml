@@ -1,4 +1,4 @@
-﻿@* @using Newtonsoft.Json;
+﻿@using Newtonsoft.Json;
 
 @{
     if (Context.Session.GetString("login") != null)
@@ -15,7 +15,7 @@
         ViewData["Tipo"] = tipo;
         //.. Caso tenha mais variáveis ViewData, se houver mais variáveis acima
     }
-} *@
+}
 
 
 
@@ -36,7 +36,7 @@
         <!--  HEADER MOBILE-->
         <nav>
             <div class="caixaLogoM d-md-none">
-                <img src="~/imagens/logo/logo - pede roça.svg" class="ajusteLogoMobile" alt="Pede Roça"/>
+                <img src="~/imagens/logo/logo - pede roça2.svg" class="ajusteLogoMobile" alt="Pede Roça"/>
                 @* <img class="ajusteLogoMobile" src=" ~ /imagens/logo/logo - pede roça.svg" alt="Pede Roça"> *@
             </div>
         </nav>
@@ -108,9 +108,20 @@
                         <li class="nav-item ">
                             <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Usuario">Usuário</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Login">Login</a>
-                        </li>
+                        @{
+                            if (ViewData["Tipo"]?.ToString() != null)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Logout">Logout</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Login">Login</a>
+                                </li>
+                            }
+                        }
                         <li class="nav-item">
                             <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Cadastro">Cadastre-se</a>
                         </li>

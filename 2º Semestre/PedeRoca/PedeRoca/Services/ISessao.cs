@@ -6,7 +6,7 @@ namespace PedeRoca.Services
     {
         void addTokenLogin(Pessoa pessoa);
 
-        Login getTokenLogin();
+        Pessoa getTokenLogin();
 
         void deleteTokenLogin();
     }

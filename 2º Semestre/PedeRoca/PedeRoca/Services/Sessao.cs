@@ -37,10 +37,6 @@ namespace PedeRoca.Services
             this.httpContextAccessor.HttpContext?.Session.Remove(this.tokenSessao);
         }
 
-        Login ISessao.getTokenLogin() //Colocou esse pra da certo
-        {
-            throw new NotImplementedException();
-        }
         #endregion
 
 

@@ -57,7 +57,7 @@ namespace PedeRoca.Controllers
             try
             {
                 this.repository.InserirPessoaUser(pessoa);
-                return RedirectToAction("Index", "Produto"); //return não ta funcionando
+                return RedirectToAction("Index", "Produto"); //mudar pra página login após criação do mesmo
             }
             catch
             {

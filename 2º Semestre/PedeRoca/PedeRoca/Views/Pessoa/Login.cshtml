@@ -1,0 +1,113 @@
+﻿@model PedeRoca.Models.Entities.Pessoa
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PedeRoca</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/estilo.css" asp-append-version="true" />
+    <link href="https://cdn.datatables.net/v/dt/dt-1.13.7/datatables.min.css" rel="stylesheet">
+</head>
+
+<body id="telaDeLogin" class="d-flex align-items-center justify-content-center">
+    <!------ Login para Desktop ------->
+    <main class="container d-none d-md-block AreaLogin">
+        <div class="d-flex justify-content-between tituloLogin">
+            <h4>Login</h4>
+            <a asp-controller="Produto" asp-action="Index"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+        </div>
+        <img class="imgLogoLogin" src="~/imagens/logo/logo - pede roça2.svg" alt="Logo Pede Roça">
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group form-floating mb-3 needs-validation" novalidate>
+                <input asp-for="Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label asp-for="Email" for="floatingInput">Usuário</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <div class="valid-feedback">
+                    Tudo Certo!
+                </div>
+            </div>
+            <div class="form-group form-floating mb-3">
+                <input asp-for="Senha" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label asp-for="Senha" for="floatingInput">Senha</label>
+            </div>
+            <div class="form-group d-flex justify-content-between">
+                <a asp-controller="" asp-action="">Recuperar senha</a> <!--PRecisa ser implementado-->
+                <a asp-controller="Pessoa" asp-action="Cadastro">Criar conta</a>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Logar" class="btn btnLogin" />
+            </div>
+        </form>
+    </main>
+    <!------ Login para cecular ------->
+    <main class="container d-block d-md-none AreaLoginCelular ">
+        <div class="d-flex justify-content-between tituloLoginCelular">
+            <h4>Login</h4>
+            <a href="index.html"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+        </div>
+        <img class="imgLogoLogin" src="../Imagens/Logo - Pede Roça2.svg" alt="Logo Pede Roça">
+        <div>
+            <div class="form-floating mb-3 needs-validation" novalidate>
+                <input asp-for="Email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label asp-for="Email" for="floatingInput">Usuário</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <div class="valid-feedback">
+                    Tudo Certo!
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Senha" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label asp-for="Senha" for="floatingInput">Senha</label>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a asp-controller="" asp-action="">Recuperar senha</a> <!--Precisa fazer a página-->
+                <a asp-controller="Pessoa" asp-action="Cadastro">Criar conta</a>
+            </div>
+            <a href="index.html" class="btnLogin">Entrar</a>
+        </div>
+    </main>
+</body>
+
+</html>
+
+@* <div class="formatacaoTabelas">
+    <h4>Login</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Senha" class="control-label"></label>
+                    <input asp-for="Senha" class="form-control" />
+                    <span asp-validation-for="Senha" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Logar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-controller="Produto" asp-action="Index">Back to List</a>
+    </div>
+</div> *@
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
