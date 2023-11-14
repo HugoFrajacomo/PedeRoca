@@ -1,0 +1,84 @@
+﻿@model PedeRoca.Models.Entities.Contato
+
+@{
+    ViewData["Title"] = "index";
+}
+
+<div class="tituloSobreEmpresa my-2"><h2>Nossos valores</h2></div>
+
+<Section class="d-flex flex-wrap align-content-around justify-content-around containerApresentacao desktopNavbar" id="Apresentação ">
+    <img class="img-fluid FormatImgApresentacao" src="~/Imagens/Sobre/SobrePedeRoca.jpg" alt="Logo Pede Roça">
+    <div class="col-md-5 mx-1 colunaTexto">
+        <h3>Missão</h3>
+        <p>Facilitar a forma como você adquire produtos artesanais, promovendo a agricultura familiar e valorizando os pequenos produtores através da plataforma Pede Roça.</p>
+        <h3>Visão</h3>
+        <p>Ser a referência em soluções inovadoras para a compra de produtos artesanais, oferecendo uma ampla variedade de alimentos frescos e cultivados localmente, contribuindo para uma alimentação mais saudável e sustentável.</p>
+        <img class="imgSobreApp" src="~/Imagens/Sobre/SobreApp.svg" alt="Pessoas felizes utilizando aplicativo de compra">
+    </div>
+    <div class="col-md-5 mx-1 colunaTexto">
+        <h3>Valores</h3>
+        <p>Valorização dos produtores: Acreditamos na importância de valorizar e apoiar os pequenos produtores, proporcionando a eles uma plataforma para comercializar seus produtos e alcançar um público maior.</p>
+        <p>Qualidade e sustentabilidade: Comprometemo-nos em oferecer alimentos de alta qualidade, cultivados com cuidado e dedicação, promovendo a agricultura sustentável e respeitando o meio ambiente.</p>
+        <p>Estabelecemos uma conexão entre os produtores e os consumidores, garantindo a rastreabilidade dos alimentos e fortalecendo a relação de confiança entre as partes.</p>
+        <p>Simplicidade e conveniência: Buscamos tornar a experiência de compra o mais simples e prazerosa possível, oferecendo uma plataforma intuitiva e um processo de pedido rápido e fácil.</p>
+        <p>Impacto positivo na comunidade: Almejamos contribuir para o desenvolvimento da economia local, promovendo uma distribuição justa e equilibrada dos recursos e fortalecendo a agricultura familiar.</p>
+    </div>
+</Section>
+
+<div class="tituloSobreEmpresa my-2"><h2>Colaboradores</h2></div>
+
+<section id="equipePedeRoca" class="d-flex flex-wrap align-content-around justify-content-around gap-1 containerApresentacao ">
+    <div class="w-25 caixaFundador">
+        <img class="imgEquipe" src="../Imagens/Equipe/Gabriel.jpg" alt="Gabriel imagem">
+        <h6 class="nomesFundador">Gabriel Dall'Acqua</h6>
+        <p class="descricaoFundador">Desenvolvedor Front-end, especialista em criar interfaces incríveis e proporcionar experiências digitais surpreendentes. Transformo designs em código funcional, focando na usabilidade, no desempenho e na compatibilidade. Estou constantemente atualizado com as últimas tendências do desenvolvimento front-end, sempre buscando entregar resultados de alta qualidade aos usuários.</p>
+    </div>
+    <div class="w-25 caixaFundador">
+        <img class="imgEquipe" src="../Imagens/Equipe/Hugo.jpg" alt="Hugo imagem">
+        <h6 class="nomesFundador">Hugo Frajacomo</h6>
+        <p class="descricaoFundador"> Desenvolvedor Front-end, especialista em criar interfaces incríveis e proporcionar experiências digitais surpreendentes. Transformo designs em código funcional, focando na usabilidade, no desempenho e na compatibilidade. Estou constantemente atualizado com as últimas tendências do desenvolvimento front-end, sempre buscando entregar resultados de alta qualidade aos usuários.</p>
+    </div>
+    <div class="w-25 caixaFundador">
+        <img class="imgEquipe" src="../Imagens/Equipe/daniel.jpg" alt="Daniel imagem">
+        <h6 class="nomesFundador">Daniel Borges</h6>
+        <p class="descricaoFundador">Desenvolvedor Front-end, especialista em criar interfaces incríveis e proporcionar experiências digitais surpreendentes. Transformo designs em código funcional, focando na usabilidade, no desempenho e na compatibilidade. Estou constantemente atualizado com as últimas tendências do desenvolvimento front-end, sempre buscando entregar resultados de alta qualidade aos usuários.</p>
+    </div>
+</section>
+
+<div class="tituloSobreEmpresa my-2"><h2>Contato</h2></div>
+
+<section id="contato" class="d-flex align-content-around justify-content-evenly gap-1 flex-wrap containerApresentacao mb-2">
+    <div class="linha">
+        <h6>Redes Sociais</h6>
+        <a class="linkNavMobile" href=""><img class="iconeSocial" src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
+        <a class="linkNavMobile" href=""><img class="iconeSocial" src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
+        <a class="linkNavMobile" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
+        <h6>Email</h6>
+        <!----------CONTATO------------->
+        <form asp-action="index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Conteudo" class="control-label"></label>
+                <textarea asp-for="Conteudo" class="form-control"></textarea>
+                <span asp-validation-for="Conteudo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-Menssagem" />
+            </div>
+        </form>
+    </div>
+    <div class="limiteQuebra">
+        <h6>Localização</h6>
+        <p>Endereço: Av. Habib Gabriel, 1360 - Jardim Buscardi, Matão - SP, 15990-539</p>
+        <iframe class="mapaLocalizacao" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.1854623734766!2d-48.362309285057385!3d-21.617695585682327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e159d287a237%3A0x70df7e81597e2d08!2sFatec%20Mat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1683990342691!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

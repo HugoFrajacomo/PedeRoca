@@ -1,0 +1,53 @@
+﻿@model IEnumerable<PedeRoca.Models.Entities.Pessoa>
+
+@{
+    ViewData["Title"] = "ADMPessoa";
+    Layout = "~/Views/Shared/_LayoutADM.cshtml";
+}
+
+<h1 class="titulo_ADMTable">Consulta Usuários</h1>
+<div class="formatacaoTabelas">
+    <p class="btn_PedeRocaADM">
+        <a asp-action="ADMCreate" class="link_PedeRocaADM">Novo Usuário</a>
+    </p>
+    <table class="table" id="tableUsuario">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th>
+                    Opções
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "ADMEdit", new { id=item.Id_usuario }, new { @class = "link_DMEditar" })
+                        @Html.ActionLink("Info", "ADMDetails", new { id=item.Id_usuario }, new { @class = "link_DMInfo" })
+                        @Html.ActionLink("Excluir", "ADMDelete", new { id=item.Id_usuario }, new { @class = "link_DMOExcluir" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -14,7 +14,7 @@ namespace PedeRoca.Models.Entities
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
-        [StringLength(11, MinimumLength = 10, ErrorMessage = "Máximo de 11 caracteres.")]
+        [StringLength(11, MinimumLength = 11, ErrorMessage = "CPF deve conter 11 caracteres.")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
         public string CPF { get; set; }
 
@@ -42,6 +42,7 @@ namespace PedeRoca.Models.Entities
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
         [StringLength(2, MinimumLength = 2, ErrorMessage = "Use a sigla com 2 caracteres")]
+        [RegularExpression("^[A-Z]{2}$", ErrorMessage = "Use apenas letras maiúsculas")]
         public string UF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -82,14 +83,12 @@ namespace PedeRoca.Models.Entities
             Telefone = string.Empty;
             DataNasc = DateTime.Now;
             Email = string.Empty;
-            CPF = string.Empty;
             CEP = string.Empty;
-            UF = string.Empty;
             Logradouro = string.Empty;
+            UF = string.Empty;
             Numero = 0;
             Cidade = string.Empty;
             Bairro = string.Empty;
-            Complemento = string.Empty;
             Senha = string.Empty;
             Notific_WP = true;
             Notific_SMS = true;
@@ -98,5 +97,40 @@ namespace PedeRoca.Models.Entities
             Tipo = NivelDeAcesso.Consumidor;
             Favoritos = new Favoritos();
         }
+
+        #region "Mascara CPF"
+        public string FormatarCPF()
+        {
+            if (string.IsNullOrEmpty(CPF))
+            {
+                return CPF;
+            }
+            return Convert.ToUInt64(CPF).ToString(@"000\.000\.000\-00");
+        }
+        #endregion
+        #region "Mascara Telefone"
+        public string FormatarTelefone()
+        {
+            if (string.IsNullOrEmpty(Telefone))
+            {
+                return Telefone;
+            }
+
+            // Adiciona a máscara ao telefone (DDDCelular: (##) #####-####)
+            return Convert.ToUInt64(Telefone).ToString(@"(##) #####-####");
+        }
+        #endregion
+        #region "Mascara CEP"
+        public string FormatarCEP()
+        {
+            if (string.IsNullOrEmpty(CEP))
+            {
+                return CEP;
+            }
+
+            // Adiciona a máscara ao CEP (#####-###)
+            return Convert.ToUInt64(CEP).ToString(@"#####-###");
+        }
+        #endregion
     }
 }

@@ -308,6 +308,7 @@ body {
   border-radius: 10px;
   background: #f2f2f2;
   width: 96%;
+  box-shadow: 0px 0px 5px 5px;
 }
 
 .TamanhoFormPesquisa{
@@ -1113,6 +1114,7 @@ body {
     color: #f2f2f2;
     font-weight: bold;
     padding: 6px 50px;
+    margin: 10px 0px;
 }
 
 .label_ADMDetail {
@@ -1139,5 +1141,13 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     color: #7C8C03;
+}
+
+.btn-Menssagem{
+    background: #7C8C03;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    color: #f2f2f2;
+    text-transform: uppercase;
 }
 

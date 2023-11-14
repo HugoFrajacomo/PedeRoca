@@ -11,6 +11,6 @@ namespace PedeRoca.Models.Entities
         [Required]
         [StringLength(1000, MinimumLength = 1, ErrorMessage = "Máximo de 1000 caracteres.")]
 
-        public string Conteúdo { get; set; }
+        public string Conteudo { get; set; }
     }
 }

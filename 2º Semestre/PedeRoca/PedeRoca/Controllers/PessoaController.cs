@@ -17,31 +17,31 @@ namespace PedeRoca.Controllers
             this.repository = new Repositories.ADO.SQLServer.PessoaDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
         }
 
-        //----------------------------- Listar Todos ------------------------------- ok
+        //----------------------------- Listar Todos ADM ----------------------------------- ok
         #region "Listar todos usuário"
         // GET: PessoaController - ListarTodosProdutos
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult ADMPessoa()
         {
             return View(this.repository.ListarPessoas());
         }
         #endregion
 
-        //----------------------------- Listar Por ID ------------------------------ ok
+        //----------------------------- Listar Por ID -------------------------------------- ok
         #region "Listar usuários por ID"
         // GET: PessoaController - Details por ID //Imformaçao por ID
         [HttpGet]
-        public IActionResult Details(int id)
+        public IActionResult ADMDetails(int id)
         {
             return View(this.repository.DetailsPessoaID(id));
         }
         #endregion
 
-        //----------------------------- Create ------------------------------------- ok
+        //----------------------------- Create Usuário ------------------------------------- ok
         #region "Criar Usuário"
         // GET: PessoaController/Create
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CadastrarUsuário()
         {
             return View();
         }
@@ -49,7 +49,7 @@ namespace PedeRoca.Controllers
         // POST: PessoaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Pessoa pessoa)
+        public IActionResult CadastrarUsuário(Pessoa pessoa)
         {
             try
             {
@@ -63,24 +63,24 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Edit --------------------------------------- * verificar
-        #region "Editor Usuário"
-        // GET: PessoaController/Edit/5
+        //----------------------------- Create ADM ----------------------------------------- ok
+        #region "Criar Usuário"
+        // GET: PessoaController/Create
         [HttpGet]
-        public ActionResult Edit(int id)
+        public IActionResult ADMCreate()
         {
-            return View(this.repository.DetailsPessoaID(id));
+            return View();
         }
 
-        // POST: PessoaController/Edit/5 - Alterar Pèssoa
+        // POST: PessoaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, Pessoa pessoa)
+        public IActionResult ADMCreate(Pessoa pessoa)
         {
             try
             {
-                this.repository.AlterarPessoa(id, pessoa);
-                return RedirectToAction(nameof(Index));
+                this.repository.InserirPessoa(pessoa);
+                return RedirectToAction(nameof(ADMPessoa));
             }
             catch
             {
@@ -89,14 +89,40 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Delete ------------------------------------- ok
+        //----------------------------- Edit ADM-------------------------------------------- ok
+        #region "Editor Usuário"
+        // GET: PessoaController/Edit/5
+        [HttpGet]
+        public ActionResult ADMEdit(int id)
+        {
+            return View(this.repository.DetailsPessoaID(id));
+        }
+
+        // POST: PessoaController/Edit/5 - Alterar Pèssoa
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ADMEdit(int id, Pessoa pessoa)
+        {
+            try
+            {
+                this.repository.AlterarPessoa(id, pessoa);
+                return RedirectToAction(nameof(ADMPessoa));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+        #endregion
+
+        //----------------------------- Delete ADM------------------------------------------ ok
         #region "Excluir Usuário"
         // GET: PessoaController/Delete/5 - Excluir Produto pelo ID
         [HttpGet]
-        public IActionResult Delete(int id)
+        public IActionResult ADMDelete(int id)
         {
             this.repository.ExcluirPessoa(id);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(ADMPessoa));
         }
         #endregion
 
