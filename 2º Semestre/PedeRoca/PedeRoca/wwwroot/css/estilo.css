@@ -134,13 +134,19 @@ body {
   border-radius: 30px;
 }
 
-.botaoPadraoNav-ativo {
+/*.botaoPadraoNav-ativo {
   border-radius: 30px;
   background: #7C8C03;
-}
+}*/
 
 .linkPadraoNavADM {
     color: #A83C01;
+}
+
+.linkPadraoNavADM-Ativo {
+    background: #A83C01;
+    color: #f2f2f2;
+    border-radius: 30px
 }
 
 .linkPadraoNavADM:hover {
@@ -156,7 +162,9 @@ body {
 }
 
 .linkPadraoNav-ativo {
+  background: #7C8C03;
   color: #f2f2f2;
+  border-radius: 30px;
 }
 
 .linkPadraoNav-ativo:hover {
@@ -1145,7 +1153,7 @@ body {
 }
 
 .btn_Salvar {
-    background: #A83C01;
+    background: #7C8C03;
     color: #f2f2f2;
     font-weight: bold;
     padding: 6px 50px;
@@ -1199,4 +1207,12 @@ body {
     text-transform: uppercase;
 }
 
+/* Estilos para esconder o ícone do olho */
+#olhoIcon {
+    cursor: pointer;
+}
 
+    /* Estilos para o ícone do olho quando a senha está visível */
+    #olhoIcon.visible {
+        color: #007bff; /* Cor azul para indicar que a senha está visível */
+    }

@@ -24,10 +24,12 @@ namespace PedeRoca.Models.Entities
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
+        [DisplayName("Data de Nascimento")]
         [DataType(DataType.Date)]
         public DateTime DataNasc { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
+        [DisplayName("E-mail")]
         [StringLength(100, MinimumLength = 1, ErrorMessage = "Máximo de 100 caracteres.")]
         public string Email { get; set; }
 
@@ -69,6 +71,7 @@ namespace PedeRoca.Models.Entities
         public bool Notific_Email { get; set; }
         public bool Status { get; set; }
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
+        [DisplayName("Nivel de Acesso")]
         public NivelDeAcesso Tipo { get; set; }
         public Favoritos Favoritos { get; set; }
 

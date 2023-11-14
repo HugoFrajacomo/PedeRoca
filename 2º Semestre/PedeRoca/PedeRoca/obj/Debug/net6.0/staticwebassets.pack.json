@@ -10989,6 +10989,18 @@
       "PackagePath": "staticwebassets\\js\\JQHelper.js"
     },
     {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\MudarClasse.js",
+      "PackagePath": "staticwebassets\\js\\MudarClasse.js"
+    },
+    {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\MudarClasseADM.js",
+      "PackagePath": "staticwebassets\\js\\MudarClasseADM.js"
+    },
+    {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\OcultarSenha.js",
+      "PackagePath": "staticwebassets\\js\\OcultarSenha.js"
+    },
+    {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\VerificarPagina.js",
       "PackagePath": "staticwebassets\\js\\VerificarPagina.js"
     },

@@ -23,9 +23,11 @@ namespace PedeRoca.Models.Entities
         public string Imagem { get; set; }
 
         [Required]
+        [DisplayName("Qtd em Estoque")]
         public int QtdEstoque { get; set; }
 
         [Required]
+        [DisplayName("Preço Unitário")]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18,2)")]
         public decimal PrecoUnitario { get; set; }
@@ -34,6 +36,7 @@ namespace PedeRoca.Models.Entities
         public UnidadeProdutos Unidade { get; set; }
 
         [Required]
+        [DisplayName("Categoria")]
         public TiposProdutos Tipo { get; set; }
 
         public Boolean Ativo { get; set; }
