@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PedeRoca.Integracao;
 using PedeRoca.Models.Entities;
+using PedeRoca.Models.Entities.Enuns;
 using System.Drawing;
 
 namespace PedeRoca.Controllers
@@ -9,12 +10,14 @@ namespace PedeRoca.Controllers
     {
         // 1) Criar um repositório
         private readonly Repositories.ADO.SQLServer.PessoaDAO repository;
+        private readonly Services.ISessao sessao;
 
         // 2) Criar o construtor para o repositório
-        public PessoaController(IConfiguration configuration) //Passar uma configuração
+        public PessoaController(IConfiguration configuration, Services.ISessao sessao) //Passar uma configuração
         {
             //trás a chave default connection para conectar no banco
             this.repository = new Repositories.ADO.SQLServer.PessoaDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
+            this.sessao = sessao;
         }
 
         //----------------------------- Listar Todos ADM ----------------------------------- ok
@@ -41,7 +44,7 @@ namespace PedeRoca.Controllers
         #region "Criar Usuário"
         // GET: PessoaController/Create
         [HttpGet]
-        public IActionResult CadastrarUsuário()
+        public IActionResult Cadastro()
         {
             return View();
         }
@@ -49,12 +52,12 @@ namespace PedeRoca.Controllers
         // POST: PessoaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CadastrarUsuário(Pessoa pessoa)
+        public IActionResult Cadastro(Pessoa pessoa)
         {
             try
             {
-                this.repository.InserirPessoa(pessoa);
-                return RedirectToAction(nameof(Index));
+                this.repository.InserirPessoaUser(pessoa);
+                return RedirectToAction("Index", "Produto"); //return não ta funcionando
             }
             catch
             {
@@ -123,6 +126,51 @@ namespace PedeRoca.Controllers
         {
             this.repository.ExcluirPessoa(id);
             return RedirectToAction(nameof(ADMPessoa));
+        }
+        #endregion
+
+        //----------------------------- MÉTODOS SESSÃO -------------------------------------
+
+        #region "Método de Get e SET para o login"
+
+        [HttpGet]
+        public IActionResult Login() //Padrão é index, mas dessa vez vamos nomear como login -> página de login
+        {
+            //se o usuário não tiver logado retorna a View, senão retorna para a páguna de início
+            return this.sessao.getTokenLogin() == null ? View() : RedirectToAction("Pessoa", "login");
+            //return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login(Pessoa pessoa)
+        {
+            //com controle de sessão
+            if (!string.IsNullOrEmpty(pessoa.Email) && !string.IsNullOrEmpty(pessoa.Senha))
+            {
+                if (this.repository.check(pessoa))
+                {
+                    var loginResultado = repository.GetType(pessoa);
+                    this.sessao.addTokenLogin(pessoa);
+
+                    if (loginResultado.Tipo == NivelDeAcesso.Administrador)
+                        return RedirectToAction("ADMProduto", "Produto");
+                    return RedirectToAction("Index", "Produto");
+                }
+                ModelState.AddModelError(string.Empty, "Usuário e/ou senha inválidos!");
+                return View();
+            }
+
+            ViewBag.Error = "Usuário e/ou Senha inválidos";
+            return View();
+        }
+        #endregion
+
+        #region "Logout"
+        public IActionResult Logout()
+        {
+            this.sessao.deleteTokenLogin();
+            return RedirectToAction("index", "Produto");
         }
         #endregion
 

@@ -142,11 +142,49 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@numero", System.Data.SqlDbType.Int)).Value = pessoa.Numero;
                     command.Parameters.Add(new SqlParameter("@complemento", System.Data.SqlDbType.VarChar)).Value = pessoa.Complemento;
                     command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = pessoa.Senha;
-                    command.Parameters.Add(new SqlParameter("@notific_WP", System.Data.SqlDbType.Bit)).Value = pessoa.Notific_WP ;
+                    command.Parameters.Add(new SqlParameter("@notific_WP", System.Data.SqlDbType.Bit)).Value = pessoa.Notific_WP;
                     command.Parameters.Add(new SqlParameter("@notific_SMS", System.Data.SqlDbType.Bit)).Value = pessoa.Notific_SMS;
                     command.Parameters.Add(new SqlParameter("@notific_Email", System.Data.SqlDbType.Bit)).Value = pessoa.Notific_Email;
                     command.Parameters.Add(new SqlParameter("@ativo", System.Data.SqlDbType.Bit)).Value = pessoa.Status;
                     command.Parameters.Add(new SqlParameter("@nivel_acesso", System.Data.SqlDbType.Int)).Value = pessoa.Tipo;
+
+                    pessoa.Id_usuario = (int)command.ExecuteScalar();
+
+                }
+            }
+        }
+        #endregion
+
+        //------------- Inserir Usuário ----------------------------- ok
+        #region "Inserir Usuário"
+        //Metodo para Inserir uma Pessoa
+        public void InserirPessoaUser(Pessoa pessoa)
+        {
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "INSERT INTO tb_usuarios (nome, cpf, telefone, data_nascimento, e_maiL, cep, uf, cidade, logradouro, bairro, numero, complemento, senha, notific_WP, notific_SMS, notific_Email, ativo, nivel_acesso ) VALUES (@nome, @cpf, @telefone, @data_nascimento, @e_maiL, @cep, @uf, @cidade, @logradouro, @bairro, @numero, @complemento, @senha, @notific_WP, @notific_SMS, @notific_Email, @ativo, @nivel_acesso); select convert(int,@@identity) as id;;";
+                    command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
+                    command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
+                    command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
+                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.DateTime)).Value = pessoa.DataNasc;
+                    command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email;
+                    command.Parameters.Add(new SqlParameter("@cep", System.Data.SqlDbType.VarChar)).Value = pessoa.CEP;
+                    command.Parameters.Add(new SqlParameter("@uf", System.Data.SqlDbType.VarChar)).Value = pessoa.UF;
+                    command.Parameters.Add(new SqlParameter("@cidade", System.Data.SqlDbType.VarChar)).Value = pessoa.Cidade;
+                    command.Parameters.Add(new SqlParameter("@logradouro", System.Data.SqlDbType.VarChar)).Value = pessoa.Logradouro;
+                    command.Parameters.Add(new SqlParameter("@bairro", System.Data.SqlDbType.VarChar)).Value = pessoa.Bairro;
+                    command.Parameters.Add(new SqlParameter("@numero", System.Data.SqlDbType.Int)).Value = pessoa.Numero;
+                    command.Parameters.Add(new SqlParameter("@complemento", System.Data.SqlDbType.VarChar)).Value = pessoa.Complemento;
+                    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = pessoa.Senha;
+                    command.Parameters.Add(new SqlParameter("@notific_WP", System.Data.SqlDbType.Bit)).Value = 1;
+                    command.Parameters.Add(new SqlParameter("@notific_SMS", System.Data.SqlDbType.Bit)).Value = 1;
+                    command.Parameters.Add(new SqlParameter("@notific_Email", System.Data.SqlDbType.Bit)).Value = 1;
+                    command.Parameters.Add(new SqlParameter("@ativo", System.Data.SqlDbType.Bit)).Value = 1;
+                    command.Parameters.Add(new SqlParameter("@nivel_acesso", System.Data.SqlDbType.Int)).Value = 0;
 
                     pessoa.Id_usuario = (int)command.ExecuteScalar();
 
@@ -212,13 +250,100 @@ namespace PedeRoca.Repositories.ADO.SQLServer
 
                         command.ExecuteNonQuery();
                     }
-                    catch 
+                    catch
                     {
                         command.Cancel();
                     }
-                    
+
                 }
             }
+        }
+        #endregion
+
+        //------------- Métodos de sessão ---------------------------
+
+        //------------- Verificar se usuário existe -----------------
+        #region "Verificar se usuário existe"
+
+        public bool check(Pessoa pessoa)
+        {
+            bool result = false;
+
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT id FROM tb_usuarios where e_maiL=@e_maiL and senha=@senha"; //ordem dos parâmetros tem que ser iugal a sequencia do Comando SQL
+                    command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email; //se atentar pro tipo que está no banco
+                    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = pessoa.Senha;
+
+                    SqlDataReader dr = command.ExecuteReader();
+                    result = dr.Read();
+                }
+
+                return result;
+            }
+        }
+        #endregion
+
+        //------------- Verificar tipo de usuário -------------------
+        #region "Verificar tipo de usuário"
+        public LoginResultado GetType(Pessoa pessoa)
+        {
+            LoginResultado resultado = new LoginResultado();
+
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT id_usuario, nivel_acesso FROM tb_usuarios where e_maiL=@e_maiL and senha=@senha";
+                    command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email;
+                    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = pessoa.Senha;
+
+                    using (SqlDataReader dr = command.ExecuteReader())
+                    {
+                        resultado.Sucess = dr.Read();
+
+                        if (resultado.Sucess)
+                        {
+                            resultado.Id = (int)dr["id_usuario"];
+                            resultado.Tipo = (NivelDeAcesso)dr["nivel_acesso"];
+
+                            pessoa.Id_usuario = resultado.Id;
+                            pessoa.Tipo = resultado.Tipo;
+                        }
+                    }
+                }
+                //Executar códigos dentro da sessão durante login do usuário ex puxar produto pra dentro do carrinho, calcular total valor dos produtos etc, puxar os favoritos etc..
+                //using (SqlCommand command2 = new SqlCommand()) //alterar o comand para 2 para executar um novo comando
+                //{
+                //    command.Connection = connection;
+                //    command.CommandText = "SELECT id, tipoUsuario FROM login where usuario=@usuario and senha=@senha";
+                //    command.Parameters.Add(new SqlParameter("@usuario", System.Data.SqlDbType.VarChar)).Value = login.Usuário;
+                //    command.Parameters.Add(new SqlParameter("@senha", System.Data.SqlDbType.VarChar)).Value = login.Senha;
+
+                //    using (SqlDataReader dr = command.ExecuteReader())
+                //    {
+                //        resultado.Sucess = dr.Read();
+
+                //        if (resultado.Sucess)
+                //        {
+                //            resultado.Id = (int)dr["id"];
+                //            resultado.TipoUsuario = (string)dr["tipoUsuário"];
+
+                //            login.id = resultado.Id;
+                //            login.TipoUsuario = resultado.TipoUsuario;
+                //        }
+                //    }
+                //}
+            }
+            return resultado;
         }
         #endregion
     }

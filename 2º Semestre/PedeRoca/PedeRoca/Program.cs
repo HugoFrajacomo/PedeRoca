@@ -25,6 +25,20 @@ namespace PedeRoca
             });
             #endregion
 
+            //Controle - Sessão
+            #region "Serviço de gerênciamento de seção"
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddScoped<Services.ISessao, Services.Sessao>();
+            //Controle de seção
+            builder.Services.AddSession(options =>
+            {
+                //Propriedade idleTimeOut refere-se ao tempo de expiração da seção por inatividade. O tempo parão é de uma aplicação asp .net core é de 20 minutos.
+                options.IdleTimeout = TimeSpan.FromMinutes(10); //personaliza o tempo da seção -> Depois de 10 minutos encerra a seção
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            #endregion
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -42,9 +56,14 @@ namespace PedeRoca
 
             app.UseAuthorization();
 
+            //Adiciona usa da seção
+            #region "Adiciona o uso da seção"
+            app.UseSession();
+            #endregion
+
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Pessoa}/{action=ADMpessoa}/{id?}");
+                pattern: "{controller=Produto}/{action=Index}/{id?}");
 
             app.Run();
         }

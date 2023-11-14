@@ -1,4 +1,25 @@
-﻿<!DOCTYPE html>
+﻿@* @using Newtonsoft.Json;
+
+@{
+    if (Context.Session.GetString("login") != null)
+    {
+        var resultadoSessao = Context.Session.GetString("login");
+        var login = JsonConvert.DeserializeObject<Pessoa>(resultadoSessao);
+        var id = login.Id_usuario ;
+        var usuario = login.Nome;
+        var tipo = login.Tipo;
+        //.. chamar todas as variáveis do LoginResultado no método GetTipo do repositório LoginDAO
+
+        ViewData["Id"] = id;
+        ViewData["Usuario"] = usuario;
+        ViewData["Tipo"] = tipo;
+        //.. Caso tenha mais variáveis ViewData, se houver mais variáveis acima
+    }
+} *@
+
+
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -42,6 +63,21 @@
                 <a class="ajusteLinkNavMobile" asp-controller="Pessoa" asp-action="Login"><i class="bi bi-person-circle navImgDesktop"></i></a>
                 <p class="nomeLinkMobile">Login</p>
             </div>
+@*             @if (ViewData["Usuario"]?.ToString() != null)
+            {
+                <div>
+                    <a class="ajusteLinkNavMobile" asp-controller="Pessoa" asp-action="Logout"><i class="bi bi-person-circle navImgDesktop"></i></a>
+                    <p class="nomeLinkMobile">Logout</p>
+                </div>
+            }
+            else
+            {
+                <div>
+                    <a class="ajusteLinkNavMobile" asp-controller="Pessoa" asp-action="Login"><i class="bi bi-person-circle navImgDesktop"></i></a>
+                    <p class="nomeLinkMobile">Login</p>
+                </div>
+            } *@
+
         </nav>
 
         <!-- BARRA DE NAVEGAÇÃO DESKTOP-->

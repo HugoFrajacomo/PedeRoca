@@ -97,40 +97,5 @@ namespace PedeRoca.Models.Entities
             Tipo = NivelDeAcesso.Consumidor;
             Favoritos = new Favoritos();
         }
-
-        #region "Mascara CPF"
-        public string FormatarCPF()
-        {
-            if (string.IsNullOrEmpty(CPF))
-            {
-                return CPF;
-            }
-            return Convert.ToUInt64(CPF).ToString(@"000\.000\.000\-00");
-        }
-        #endregion
-        #region "Mascara Telefone"
-        public string FormatarTelefone()
-        {
-            if (string.IsNullOrEmpty(Telefone))
-            {
-                return Telefone;
-            }
-
-            // Adiciona a máscara ao telefone (DDDCelular: (##) #####-####)
-            return Convert.ToUInt64(Telefone).ToString(@"(##) #####-####");
-        }
-        #endregion
-        #region "Mascara CEP"
-        public string FormatarCEP()
-        {
-            if (string.IsNullOrEmpty(CEP))
-            {
-                return CEP;
-            }
-
-            // Adiciona a máscara ao CEP (#####-###)
-            return Convert.ToUInt64(CEP).ToString(@"#####-###");
-        }
-        #endregion
     }
 }

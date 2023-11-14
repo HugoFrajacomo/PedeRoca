@@ -1098,9 +1098,29 @@ body {
     color: #f2f2f2;
 }
 
+.titulo_Table {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+    background: #7C8C03;
+    padding: 5px;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #f2f2f2;
+}
+
 .sub_tituloADM{
     text-align: center;
     color: #A83C01;
+    font-weight: bold;
+}
+
+.sub_titulo {
+    text-align: center;
+    color: #7C8C03;
     font-weight: bold;
 }
 
@@ -1109,12 +1129,33 @@ body {
     font-weight: bold;
 }
 
+.label_User {
+    color: #7C8C03;
+    font-weight: bold;
+}
+
+
 .btn_ADMSalvar {
     background: #A83C01;
     color: #f2f2f2;
     font-weight: bold;
     padding: 6px 50px;
     margin: 10px 0px;
+}
+
+.btn_Salvar {
+    background: #A83C01;
+    color: #f2f2f2;
+    font-weight: bold;
+    padding: 6px 50px;
+    margin: 10px 0px;
+}
+
+.label_Detail {
+    background: #7C8C0350;
+    margin: 3px 0px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .label_ADMDetail {
@@ -1126,6 +1167,12 @@ body {
 
 .label_ADMDetailR {
     border: 1px solid #A83C0150;
+    border-radius: 0px 10px 10px 0px;
+    margin: 3px 0px;
+}
+
+.label_DetailR {
+    border: 1px solid #7C8C0350;
     border-radius: 0px 10px 10px 0px;
     margin: 3px 0px;
 }
@@ -1150,4 +1197,5 @@ body {
     color: #f2f2f2;
     text-transform: uppercase;
 }
+
 

@@ -2,9 +2,9 @@
 {
     public enum NivelDeAcesso : int
     {
+        Consumidor = 0,
         Administrador = 1,
-        Consumidor = 2,
-        Produtor = 3
+        Produtor = 2
     }
 
 
