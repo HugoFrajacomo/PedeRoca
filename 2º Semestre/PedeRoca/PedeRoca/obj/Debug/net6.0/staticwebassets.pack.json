@@ -10985,6 +10985,10 @@
       "PackagePath": "staticwebassets\\js\\FiltroPesquisa.js"
     },
     {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\InputFormat.js",
+      "PackagePath": "staticwebassets\\js\\InputFormat.js"
+    },
+    {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\JQHelper.js",
       "PackagePath": "staticwebassets\\js\\JQHelper.js"
     },
@@ -11003,6 +11007,10 @@
     {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\VerificarPagina.js",
       "PackagePath": "staticwebassets\\js\\VerificarPagina.js"
+    },
+    {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\ViaCEP.js",
+      "PackagePath": "staticwebassets\\js\\ViaCEP.js"
     },
     {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\_cardPrecoTotal.js",

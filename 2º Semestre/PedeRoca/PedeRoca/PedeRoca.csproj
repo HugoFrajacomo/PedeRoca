@@ -8,13 +8,18 @@
 
   <ItemGroup>
     <Compile Remove="Views\Home\**" />
+    <Compile Remove="wwwroot\js\NovaPasta\**" />
     <Content Remove="Views\Home\**" />
+    <Content Remove="wwwroot\js\NovaPasta\**" />
     <EmbeddedResource Remove="Views\Home\**" />
+    <EmbeddedResource Remove="wwwroot\js\NovaPasta\**" />
     <None Remove="Views\Home\**" />
+    <None Remove="wwwroot\js\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Repositories\ADO\SQLServer\ProdutoDAO-DESKTOP-JHN6Q5P.cs" />
   </ItemGroup>
 
   <ItemGroup>

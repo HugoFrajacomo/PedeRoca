@@ -14,13 +14,11 @@ namespace PedeRoca.Models.Entities
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
-        [StringLength(11, MinimumLength = 11, ErrorMessage = "CPF deve conter 11 caracteres.")]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [StringLength(14, MinimumLength = 14, ErrorMessage = "CPF deve conter 11 caracteres.")]
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
-        [StringLength(11, MinimumLength = 1, ErrorMessage = "Máximo de 11 caracteres.")]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [StringLength(15, MinimumLength = 15)]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
@@ -34,8 +32,7 @@ namespace PedeRoca.Models.Entities
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
-        [StringLength(8, MinimumLength = 8)]
-        [RegularExpression("^[0-9]*$", ErrorMessage = "Apenas números são permitidos.")]
+        [StringLength(9, MinimumLength = 9)]
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "Campo Obrigatório", AllowEmptyStrings = false)]
