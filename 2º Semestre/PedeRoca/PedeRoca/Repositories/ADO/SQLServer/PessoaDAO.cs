@@ -132,7 +132,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
-                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.DateTime)).Value = pessoa.DataNasc;
+                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.Date)).Value = pessoa.DataNasc;
                     command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email;
                     command.Parameters.Add(new SqlParameter("@cep", System.Data.SqlDbType.VarChar)).Value = pessoa.CEP;
                     command.Parameters.Add(new SqlParameter("@uf", System.Data.SqlDbType.VarChar)).Value = pessoa.UF;
@@ -170,7 +170,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
-                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.DateTime)).Value = pessoa.DataNasc;
+                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.Date)).Value = pessoa.DataNasc;
                     command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email;
                     command.Parameters.Add(new SqlParameter("@cep", System.Data.SqlDbType.VarChar)).Value = pessoa.CEP;
                     command.Parameters.Add(new SqlParameter("@uf", System.Data.SqlDbType.VarChar)).Value = pessoa.UF;
@@ -208,7 +208,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     command.Parameters.Add(new SqlParameter("@nome", System.Data.SqlDbType.VarChar)).Value = pessoa.Nome;
                     command.Parameters.Add(new SqlParameter("@cpf", System.Data.SqlDbType.VarChar)).Value = pessoa.CPF;
                     command.Parameters.Add(new SqlParameter("@telefone", System.Data.SqlDbType.VarChar)).Value = pessoa.Telefone;
-                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.DateTime)).Value = pessoa.DataNasc;
+                    command.Parameters.Add(new SqlParameter("@data_nascimento", System.Data.SqlDbType.Date)).Value = pessoa.DataNasc;
                     command.Parameters.Add(new SqlParameter("@e_maiL", System.Data.SqlDbType.VarChar)).Value = pessoa.Email;
                     command.Parameters.Add(new SqlParameter("@cep", System.Data.SqlDbType.VarChar)).Value = pessoa.CEP;
                     command.Parameters.Add(new SqlParameter("@uf", System.Data.SqlDbType.VarChar)).Value = pessoa.UF;
@@ -260,9 +260,9 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Métodos de sessão ---------------------------
+        //------------- Métodos de sessão --------------------------- ok
 
-        //------------- Verificar se usuário existe -----------------
+        //------------- Verificar se usuário existe ----------------- ok
         #region "Verificar se usuário existe"
 
         public bool check(Pessoa pessoa)
@@ -289,7 +289,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Verificar tipo de usuário -------------------
+        //------------- Verificar tipo de usuário ------------------- ok
         #region "Verificar tipo de usuário"
         public LoginResultado GetType(Pessoa pessoa)
         {

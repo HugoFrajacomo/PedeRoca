@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PedeRoca.Integracao;
 using PedeRoca.Models.Entities;
 using PedeRoca.Models.Entities.Enuns;
 using System.Drawing;
