@@ -1,0 +1,108 @@
+is_global = true
+build_property.RefitInternalNamespace = PedeRoca
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PedeRoca
+build_property.RootNamespace = PedeRoca
+build_property.ProjectDir = D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/CarrinhoDeCompras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cQ2FycmluaG9EZUNvbXByYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/DetailItemCarrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cRGV0YWlsSXRlbUNhcnJpbmhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/EditarItemCarrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cRWRpdGFySXRlbUNhcnJpbmhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMPessoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETVBlc3NvYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENhZGFzdHJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1Qcm9kdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_LayoutADM.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBRE0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcQURNRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMMenssagens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcQURNTWVuc3NhZ2Vucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-515halpndo

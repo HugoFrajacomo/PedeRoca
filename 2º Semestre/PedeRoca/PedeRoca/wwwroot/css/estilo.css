@@ -1212,7 +1212,127 @@ body {
     cursor: pointer;
 }
 
-    /* Estilos para o ícone do olho quando a senha está visível */
-    #olhoIcon.visible {
-        color: #007bff; /* Cor azul para indicar que a senha está visível */
-    }
+/* Estilos para o ícone do olho quando a senha está visível */
+#olhoIcon.visible {
+    color: #007bff; /* Cor azul para indicar que a senha está visível */
+}
+
+/*-------------Carrinho de compras ------------------------ */
+.tamanhoMinimoItemCarrinho{
+    min-width: 300px;
+}
+
+.bgCarrinhoDeCompras {
+    background: #7C8C03;
+    margin: 10px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.LayoutCarrinho{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.SectionItemCarrinho {
+    background: #f2f2f2;
+    border: 1px solid #7C8C03;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.SectionItemCarrinho:hover {
+    box-shadow: 0px 0px 2px 2px #7C8C03;
+}
+
+
+.TituloItemCarrinho {
+    font-weight: bold;
+}
+
+.containerItemCarrinho {
+    display: flex;
+    align-items: center;
+}
+
+.imgCarrinhoProduto {
+    flex: 0 0 25%;
+    margin: 5px;
+}
+
+.DescricaoProduto {
+    flex: 1;
+    padding-left: 5px;
+    border-left: 2px solid #A83C01;
+    margin: 5px;
+    position: relative;
+}
+
+.fixadoTopoPreco{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.valorTotalItem{
+    background: #A83C01;
+    color: #f2f2f2;
+    border-radius: 5px;
+    font-weight:bold;
+    padding: 5px;
+}
+
+.quantidadeContainer {
+    margin: 10px;
+}
+
+.tituloQuantidade{
+    padding: 2px 5px;
+    border-radius: 5px 0px 0px 5px;
+    background: #7C8C03;
+    color: #f2f2f2;
+}
+
+.valorQuantidade {
+    padding: 2px 18px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #7C8C03;
+}
+
+
+.aEsquerda {
+    text-align: end;
+    margin: 5px 10px;
+}
+
+
+.AlterarBtnCarrinho {
+    padding: 5px 10px;
+    background: #7C8C03;
+    color: #f2f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.AlterarBtnCarrinho:hover {
+    background: #7C8C0375;
+    color: #f2f2f2;
+}
+
+.ExcluirBtnCarrinho {
+    padding: 5px 10px;
+    background: #A83C01;
+    color: #f2f2f2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ExcluirBtnCarrinho:hover {
+    background: #A83C0175;
+    color: #f2f2f2;
+}

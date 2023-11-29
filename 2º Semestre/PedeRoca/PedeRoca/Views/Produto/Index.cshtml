@@ -3,6 +3,32 @@
 @{
     ViewData["Title"] = "Index";
 }
+
+<!-----------Image - Desktop --------------->
+<img src="~/imagens/banner/desktop2.svg" class="img-fluid desktopNavbar marginBanner" alt="...">
+<!-----------Carrocel - Celular --------------->
+<div id="carouselExampleAutoplaying" class="carousel slide mobileNavbar marginBannerM" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/imagens/banner/svg/carrocel1.svg" class="d-block w-100" alt="Pacote de assinatura">
+        </div>
+        <div class="carousel-item">
+
+            <img src="~/imagens/banner/svg/Carrocel2.svg" class="d-block w-100" alt="Pacote de assinatura">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
 <!------------Filtro de pesquisa--------->
 <nav class="navbar navbar-expand-xxxl sticky-top filtroPesquisa d-flex justify-content-center align-content-center">
     <form class="d-flex TamanhoFormPesquisa">
@@ -47,6 +73,7 @@
                     <span class="inputBorda valorTotalProduto" id="valorTotalProduto1"></span>
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic example">
+@*                     @Html.ActionLink("Carrinho", "addProduto", new { id = item.Id_produtos }, new { @class = "link_DMOExcluir" }) *@
                     <button type="button" class="btnComprar">Comprar</button>
                     <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
                 </div>

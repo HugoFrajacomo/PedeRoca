@@ -1,0 +1,36 @@
+﻿@model PedeRoca.Models.Entities.ItemDoCarrinho
+
+@{
+    ViewData["Title"] = "DetailItemCarrinho";
+}
+
+<h1>DetailItemCarrinho</h1>
+
+<div>
+    <h4>ItemDoCarrinho</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id_itemCarrinho)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id_itemCarrinho)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrecoSubTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrecoSubTotal)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

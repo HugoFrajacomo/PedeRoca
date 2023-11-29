@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace PedeRoca.Models.Entities
 {
@@ -7,10 +9,13 @@ namespace PedeRoca.Models.Entities
         [DisplayName("ID")]
         public int Id_itemCarrinho { get; set; }
         public Produto Produto { get; set; }  = new Produto();
+
         [DisplayName("QTD")]
         public int Quantidade { get; set; }
 
         [DisplayName("Valor")]
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal PrecoSubTotal
         {
             get

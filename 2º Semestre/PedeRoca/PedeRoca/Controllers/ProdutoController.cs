@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PedeRoca.Models.Entities;
-using Refit;
-using System.Configuration;
+
 
 namespace PedeRoca.Controllers
 {
@@ -112,6 +110,18 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
+        //---------------- Redirecionar ~função addItemCarrinho --------------------------
+        #region "Redirecionar"
+        // GET: ProdutoController/Delete/5 - Excluir Produto pelo ID
+        [HttpGet]
+        public IActionResult addProduto()
+        {
+            return RedirectToAction("AdicionarItemAoCarrinho", "ItemDoCarrinho");
+        }
+        #endregion
+
+        //---------------------------- Não funcional -------------------------------------
+        #region "Colocar imagem Porduto no servidor"
         //--------------------- Colocar imagem Produto no servidor -----------------
         //#region "Imagem - Servidor"
         //private string caminhoServidor;
@@ -148,6 +158,7 @@ namespace PedeRoca.Controllers
 
 
         //#endregion
+        #endregion
 
     }
 }
