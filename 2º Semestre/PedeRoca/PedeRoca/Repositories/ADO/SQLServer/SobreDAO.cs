@@ -51,7 +51,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Ler menssagem ---------------------
+        //------------- Ler menssagem ------------------------- teste
         #region "Ler menssagem por ID"
         //Metodo para retornar somente um objeto pelo ID - GET -Detail
         public Models.Entities.Contato DetailsMenssagemID(int id)
@@ -82,7 +82,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Inserir menssagem ---------------------
+        //------------- Inserir menssagem --------------------- ok
         #region "Inserir Menssagem"
         //Metodo para Inserir um produto
         public void InserirMenssagem(Contato contato)
@@ -95,7 +95,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                     command.Connection = connection;
                     command.CommandText = "Insert into tb_contatos (e_mail, conteudo) values (@e_mail, @conteudo); select convert(int,@@identity) as id;;";
                     command.Parameters.Add(new SqlParameter("@e_mail", System.Data.SqlDbType.VarChar)).Value = contato.Email;
-                    command.Parameters.Add(new SqlParameter("@e_mail", System.Data.SqlDbType.VarChar)).Value = contato.Conteudo;
+                    command.Parameters.Add(new SqlParameter("@conteudo", System.Data.SqlDbType.VarChar)).Value = contato.Conteudo;
 
                     contato.Id_Contato = (int)command.ExecuteScalar();
                 }
@@ -103,7 +103,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
         }
         #endregion
 
-        //------------- Deletar menssagem ---------------------------- ok
+        //------------- Deletar menssagem --------------------- Teste
         #region "Deletar Produtos"
         //Metodo para Deletar um Produto
         public void ExcluirMenssagem(int id)
@@ -114,7 +114,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "DELETE FROM tb_contatos where id_produto = @id";
+                    command.CommandText = "DELETE FROM tb_contatos where id_contato = @id";
                     command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     command.ExecuteNonQuery();

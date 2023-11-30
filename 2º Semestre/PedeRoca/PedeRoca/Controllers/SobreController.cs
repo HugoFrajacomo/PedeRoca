@@ -15,7 +15,7 @@ namespace PedeRoca.Controllers
             this.repository = new Repositories.ADO.SQLServer.SobreDAO(configuration.GetConnectionString(Configurations.AppSettings.getKeyConnectionString()));
         }
 
-        //----------------------------- Listar Todos - ADM -------------------------- ok
+        //----------------------------- Listar Todos - ADM -------------------------- 
         #region "Listar Menssagens"
         [HttpGet]
         public IActionResult ADMMenssagens()
@@ -24,7 +24,7 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Listar Por ID - ADM ------------------------------ ok
+        //----------------------------- Listar Por ID - ADM -------------------------
         #region "Listar Produtos por ID"
         // Post: ProdutoController - Details por ID //Imformaçao por ID
         [HttpGet]
@@ -34,7 +34,7 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Create ------------------------------------- ok
+        //----------------------------- Create -------------------------------------- 
         #region "Criar Mensagens"
         // GET: ProdutoController/Create
         [HttpGet]
@@ -60,14 +60,14 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
-        //----------------------------- Delete - ADM ------------------------------------- ok
+        //----------------------------- Delete - ADM -------------------------------- 
         #region "Excluir Produto"
         // GET: ProdutoController/Delete/5 - Excluir Produto pelo ID
         [HttpGet]
         public IActionResult ADMDelete(int id)
         {
             this.repository.ExcluirMenssagem(id);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(ADMMenssagens));
         }
         #endregion
     }

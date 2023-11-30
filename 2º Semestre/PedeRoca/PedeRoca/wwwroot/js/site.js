@@ -3,7 +3,7 @@
 
 // Write your JavaScript code.
 
-
+// Formatação tabela ADMProdutos
 $(document).ready(function () {
     $('#tableProdutos').DataTable({
         "ordering": true,
@@ -35,8 +35,41 @@ $(document).ready(function () {
     });
 });
 
+// Formatação tabela ADMUsuario
 $(document).ready(function () {
     $('#tableUsuario').DataTable({
+        "ordering": true,
+        "paging": true,
+        "searching": true,
+        "oLanguage": {
+            "sEmptyTable": "Nenhum registro encontrado na tabela",
+            "sInfo": "Mostrar _START_ até _END_ de _TOTAL_ registros",
+            "sInfoEmpty": "Mostrar 0 até 0 de 0 Registros",
+            "sInfoFiltered": "(Filtrar de _MAX_ total registros)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ".",
+            "sLengthMenu": "Mostrar _MENU_ registros por pagina",
+            "sLoadingRecords": "Carregando...",
+            "sProcessing": "Processando...",
+            "sZeroRecords": "Nenhum registro encontrado",
+            "sSearch": "Pesquisar",
+            "oPaginate": {
+                "sNext": "Proximo",
+                "sPrevious": "Anterior",
+                "sFirst": "Primeiro",
+                "sLast": "Ultimo"
+            },
+            "oAria": {
+                "sSortAscending": ": Ordenar colunas de forma ascendente",
+                "sSortDescending": ": Ordenar colunas de forma descendente"
+            }
+        }
+    });
+});
+
+// Formatação tabela ADMMensagem
+$(document).ready(function () {
+    $('#tabelaMensagens').DataTable({
         "ordering": true,
         "paging": true,
         "searching": true,

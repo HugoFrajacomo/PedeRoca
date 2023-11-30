@@ -5,43 +5,43 @@
     Layout = "~/Views/Shared/_LayoutADM.cshtml";
 }
 
-<h1>ADMMenssagens</h1>
+<h1 class="titulo_ADMTable">ADMMenssagens</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id_Contato)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Conteudo)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id_Contato)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Conteudo)
-            </td>
-            <td>
-                @Html.ActionLink("Ler", "ADMDetails", new { id=item.Id_Contato }) |
-                @Html.ActionLink("Delete", "ADMDelete", new { id=item.Id_Contato  })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="formatacaoTabelas">
+    <table class="table" id="tabelaMensagens">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id_Contato)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    Opções
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id_Contato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Ler", "ADMDetails", new { id = item.Id_Contato }, new { @class = "link_DMInfoMensagens" }) |
+                        @Html.ActionLink("Delete", "ADMDelete", new { id = item.Id_Contato }, new { @class = "link_DMOExcluir" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
