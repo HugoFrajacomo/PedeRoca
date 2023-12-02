@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PedeRoca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+844bfc405afd3d11a122a3cf38ec964cec6fd937")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+401aa55801cd75f7d5c1c8b669a18751fab90e12")]
 [assembly: System.Reflection.AssemblyProductAttribute("PedeRoca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PedeRoca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

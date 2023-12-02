@@ -44,7 +44,7 @@
     {
         <div class="geralCard cartaoProduto">
             <div class="posicaoPreco">
-                <span id="precoProduto1">@Html.DisplayFor(model => item.PrecoUnitario)</span>
+                <span id="precoProduto">@Html.DisplayFor(model => item.PrecoUnitario)</span>
             </div>
             <div class="posicaoFavorito">
                 <button id="boxFavoritoF1" onclick="trocarIcone('F1')">
@@ -68,9 +68,8 @@
             <hr>
             <div class="qtdTotalCompraCarrinho">
                 <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
-                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1"
-                           id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(1)">
-                    <span class="inputBorda valorTotalProduto" id="valorTotalProduto1"></span>
+                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto" placeholder="Qtd">
+                    <span class="inputBorda valorTotalProduto" id="valorTotalProduto"></span>
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic example">
 @*                     @Html.ActionLink("Carrinho", "addProduto", new { id = item.Id_produtos }, new { @class = "link_DMOExcluir" }) *@

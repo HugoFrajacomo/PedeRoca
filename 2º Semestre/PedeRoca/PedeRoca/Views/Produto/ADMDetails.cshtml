@@ -3,6 +3,9 @@
 @{
     ViewData["Title"] = "ADMDetails";
     Layout = "~/Views/Shared/_LayoutADM.cshtml";
+
+    string NomeProduto = @Html.DisplayNameFor(model => model.Id_produtos);
+    ViewBag.NomeProduto = NomeProduto;
 }
 <h1 class="titulo_ADMTable">Detalhes do Produto</h1>
 

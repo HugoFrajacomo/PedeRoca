@@ -1385,3 +1385,68 @@ body {
     background: #A83C0175;
     color: #f2f2f2;
 }
+
+.EditarItemCarrinhoQTD{
+    border-radius: 5px;
+    background: #7C8C03;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.EditarItemCarrinhoQTD::after {
+    content: " - Quantidade"
+}
+
+.btn_AlterarQTD{
+    margin-top: 10px;
+    background: #7C8C03;
+    color: #f2f2f2;
+}
+
+.btn_AlterarQTD:hover {
+    background: #7C8C0375;
+    color: #f2f2f2;
+}
+
+.AjusteDataEntrega{
+    text-transform: capitalize;
+}
+/*    CarrinhoVazio         */
+.ConteinerCarrinhoVazio {
+    height: 73vh;
+}
+
+.tituloVazio {
+    border-bottom: 2px solid #7C8C03;
+    font-weight: bold;
+    display: inline;
+}
+
+.ContinuarComprando {
+    border-radius: 10px;
+    color: #f2f2f2;
+    Background: #7C8C03;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ContinuarComprando:hover {
+    background: #7C8C0375;
+    color: #f2f2f2
+}
+.VazioLogin {
+    border-radius: 5px;
+    padding: 5px;
+    background: #7C8C03;
+    color: #f2f2f2;
+    margin-left: 5px;
+    text-decoration:none;
+}
+
+.VazioLogin:hover {
+    background: #7C8C0375;
+    color: #f2f2f2;
+}

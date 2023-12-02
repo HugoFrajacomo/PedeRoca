@@ -136,12 +136,50 @@ namespace PedeRoca.Repositories.ADO.SQLServer
 
                     command.Parameters.Add(new SqlParameter("@id_produto", System.Data.SqlDbType.Int)).Value = item.Produto.Id_produtos;
                     command.Parameters.Add(new SqlParameter("@quantidade", System.Data.SqlDbType.Int)).Value = item.Quantidade;
-                    command.Parameters.Add(new SqlParameter("@valorSubTotal", System.Data.SqlDbType.Decimal)).Value = item.PrecoSubTotal;
+                    command.Parameters.Add(new SqlParameter("@valorSubTotal", System.Data.SqlDbType.Decimal)).Value = (item.Quantidade) * (DetailsProdutoID(item.Produto.Id_produtos).PrecoUnitario);
 
                     item.Id_itemCarrinho = (int)command.ExecuteScalar();
                 }
             }
         }
+        #region "Listar produtos por ID"
+        //Metodo para retornar somente um objeto pelo ID - GET -Detail
+        public Models.Entities.Produto DetailsProdutoID(int id)
+        {
+            Produto produto = new Produto();
+            using (SqlConnection connection = new SqlConnection(this.connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "select id_produto, nome, descricao, imagem, qtd_estoque, preco_unitario,unidade, tipo_produto, ativo FROM tb_produtos where id_produto=@id;";
+                    command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
+
+                    //Onde será retornada a informação da consulta do banco
+                    SqlDataReader dr = command.ExecuteReader(); //objeto de fluxo de dados
+
+                    //Passando os dados do banco para o objeto
+                    if (dr.Read())
+                    {
+                        produto.Id_produtos = (int)dr["id_produto"];
+                        produto.Nome = (string)dr["nome"];
+                        produto.Descricao = (string)dr["descricao"];
+                        produto.Imagem = (string)dr["imagem"];
+                        produto.QtdEstoque = (int)dr["qtd_estoque"];
+                        produto.PrecoUnitario = (decimal)dr["preco_unitario"];
+                        produto.Unidade = (UnidadeProdutos)dr["unidade"];
+                        produto.Tipo = (TiposProdutos)dr["tipo_produto"];
+                        produto.Ativo = (Boolean)dr["ativo"];
+                    }
+                }
+            }
+            return produto;
+        }
+        #endregion
+
+
+
         #endregion
 
         //------------- Editar Quantidade de Itens do Carrinho---------- Testar
