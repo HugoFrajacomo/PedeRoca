@@ -1,0 +1,117 @@
+﻿@model PedeRoca.Models.Entities.Pessoa
+
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<h1 class="titulo_Table">Perfil</h1>
+
+<div class="formatacaoTabelas">
+    <h2 class="text-center">Olá, @Html.DisplayFor(model => model.Nome) @Html.ActionLink("Editar", "EditarPerfil", new { id = Model.Id_usuario }, new { @class = "link_EditarPerfil" })</h2>
+    <div class="d-flex justify-content-center flex-wrap">
+        <section class="sessaoPerfil">
+            <h4 class="text-center tituloPerfil">Informações pessoais</h4>
+            <dl class="row">
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.CPF)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.CPF)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Telefone)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.DataNasc)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.DataNasc)
+                </dd>
+            </dl>
+        </section>
+        <section class="sessaoPerfil">
+            <h4 class="text-center tituloPerfil">Endereço</h4>
+            <dl class="row">
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.CEP)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.CEP)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Logradouro)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Logradouro)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.UF)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.UF)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Numero)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Numero)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Cidade)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Cidade)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Bairro)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Bairro)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Complemento)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Complemento)
+                </dd>
+            </dl>
+        </section>
+        <section class="sessaoPerfil">
+            <h4 class="text-center tituloPerfil">Acesso</h4>
+            <dl class="row">
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt class="col-sm-5 subtituloPerfil">
+                    @Html.DisplayNameFor(model => model.Senha)
+                </dt>
+                <dd class="col-sm-7 subtituloPerfilR">
+                    @Html.DisplayFor(model => model.Senha)
+                </dd>
+            </dl>
+        </section>
+        <section class="sessaoPerfil">
+            <h4 class="text-center tituloPerfil">Notificações</h4>
+            <dl class="col">
+                <dt class="col-sm-2 subtituloPerfil">
+                    @Html.DisplayFor(model => model.Notific_WP)
+                    @Html.DisplayNameFor(model => model.Notific_WP)
+                </dt>
+                <dt class="col-sm-2 subtituloPerfil">
+                    @Html.DisplayFor(model => model.Notific_SMS)
+                    @Html.DisplayNameFor(model => model.Notific_SMS)
+                </dt>
+                <dt class="col-sm-2 subtituloPerfil">
+                    @Html.DisplayFor(model => model.Notific_Email)
+                    @Html.DisplayNameFor(model => model.Notific_Email)
+                </dt>
+            </dl>
+        </section>
+    </div>
+</div>

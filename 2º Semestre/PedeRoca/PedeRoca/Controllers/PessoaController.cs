@@ -39,6 +39,16 @@ namespace PedeRoca.Controllers
         }
         #endregion
 
+        //----------------------------- Listar Por ID -------------------------------------- ok
+        #region "Listar usuários por ID"
+        // GET: PessoaController - Details por ID //Imformaçao por ID
+        [HttpGet]
+        public IActionResult Perfil(int id)
+        {
+            return View(this.repository.DetailsPessoaID(id));
+        }
+        #endregion
+
         //----------------------------- Create Usuário ------------------------------------- ok
         #region "Criar Usuário"
         // GET: PessoaController/Create
@@ -104,6 +114,32 @@ namespace PedeRoca.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult ADMEdit(int id, Pessoa pessoa)
+        {
+            try
+            {
+                this.repository.AlterarPessoa(id, pessoa);
+                return RedirectToAction(nameof(ADMPessoa));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+        #endregion
+
+        //----------------------------- Edit Perfil-------------------------------------------- ok
+        #region "Editor Usuário"
+        // GET: PessoaController/Edit/5
+        [HttpGet]
+        public ActionResult EditarPerfil(int id)
+        {
+            return View(this.repository.DetailsPessoaID(id));
+        }
+
+        // POST: PessoaController/Edit/5 - Alterar Pèssoa
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult EditarPerfil(int id, Pessoa pessoa)
         {
             try
             {

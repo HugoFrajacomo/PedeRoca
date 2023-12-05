@@ -415,21 +415,23 @@ body {
     text-align: justify;
     padding: 0px 5px;
   }
-  .grupoQtdTotal {
-    display: flex;
-    width: 100%;
-  }
-  .quantidadeProduto {
-    flex-grow: 1;
-  }
-  .valorTotalProduto {
-    flex-grow: 2;
-  }
-  .quantidadeProduto {
-    border-radius: 5px 0px 0px 0px;
+
+ .quantidadeProduto {
+    border-radius: 5px 0px 0px 5px;
     border: 1px solid #7C8C03;
     text-align: center;
-  }
+    width:50%;
+ }
+
+ .btn_addcarrinho{
+    border-radius: 0px 5px  5px 0px;
+    padding: 5px;
+    display: inline;
+    background: #7C8C03;
+    color: #f2f2f2;
+    width:49%
+ }
+
   .valorTotalProduto {
     border: 1px solid #7C8C03;
     border-radius: 0px 5px 0px 0px;
@@ -456,12 +458,6 @@ body {
     background: #7C8C03;
     border: 1px solid black;
     border-radius: 0px 0px 5px 0px;
-  }
-  .tamanhoCarrinho {
-    color: #f2f2f2;
-  }
-  .tamanhoCarrinho::after {
-    content: " Carrinho";
   }
 }
 /* Estilos para desktop */
@@ -514,16 +510,24 @@ body {
   }
   .quantidadeProduto {
     width: 50%;
-    border-radius: 5px 0px 0px 0px;
+    border-radius: 5px 0px 0px 5px;
     border: 1px solid #7C8C03;
     text-align: center;
   }
-  .valorTotalProduto {
-    border: 1px solid #7C8C03;
-    border-radius: 0px 5px 0px 0px;
+
+.btn_addcarrinho{
     width: 50%;
-    text-align: center;
-  }
+    color: #f2f2f2;
+    background: #7C8C03;
+    border-radius: 0px 5px 5px 0px;
+}
+
+    .valorTotalProduto {
+        border: 1px solid #7C8C03;
+        border-radius: 0px 5px 0px 0px;
+        width: 50%;
+        text-align: center;
+    }
   .valorTotalProduto::before {
     content: "Total: R$ ";
   }
@@ -1448,5 +1452,92 @@ body {
 
 .VazioLogin:hover {
     background: #7C8C0375;
+    color: #f2f2f2;
+}
+
+/*--- Perfil do Usuário ---*/
+@media (min-width: 768px) {
+    .sessaoPerfil {
+        border: 1px solid #7C8C03;
+        border-radius: 5px;
+        width: 40%;
+        margin: 10px;
+        min-width: 600px;
+        padding: 5px;
+    }
+
+    .tituloPerfil {
+        background: #7C8C03;
+        color: #f2f2f2;
+        border-radius: 5px;
+        display: block;
+    }
+
+    .subtituloPerfil {
+        border-bottom: 2px solid #7C8C03;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        margin: 5px auto;
+        font-size: 1rem;
+    }
+
+    .subtituloPerfilR {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    .sessaoPerfil {
+        border: 1px solid #7C8C03;
+        border-radius: 5px;
+        width: 40%;
+        margin: 10px;
+        min-width: 96%;
+        padding: 5px;
+    }
+
+    .tituloPerfil {
+        background: #7C8C03;
+        color: #f2f2f2;
+        border-radius: 5px;
+        display: block;
+    }
+
+    .subtituloPerfil {
+        border-bottom: 2px solid #7C8C03;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        margin: 5px auto;
+        font-size: 1.2rem;
+    }
+
+    .subtituloPerfilR {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+}
+
+.link_EditarPerfil {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #A83C01;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.link_EditarPerfil:hover {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.btn-SalvarEditPerfil{
+    padding: 5px 40px;
+    border-radius: 5px;
+    background: #7C8C03;
     color: #f2f2f2;
 }

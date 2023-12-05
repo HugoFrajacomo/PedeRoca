@@ -67,18 +67,28 @@
             </div>
             <hr>
             <div class="qtdTotalCompraCarrinho">
-                <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
-                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto" placeholder="Qtd">
-                    <span class="inputBorda valorTotalProduto" id="valorTotalProduto"></span>
-                </div>
-                <div class="btn-group" role="group" aria-label="Basic example">
-@*                     @Html.ActionLink("Carrinho", "addProduto", new { id = item.Id_produtos }, new { @class = "link_DMOExcluir" }) *@
-                    <button type="button" class="btnComprar">Comprar</button>
-                    <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
-                </div>
+                <form class="input-group" role="group" aria-label="Basic example" asp-route-idproduto="@Html.DisplayFor(model => item.Id_produtos)" asp-action="NomeDoSeuMetodo" asp-controller="NomeDoSeuController" method="post">
+                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd">
+                    <button class="inputBorda btn_addcarrinho" id="valorTotalProduto"><i class="bi bi-cart-plus">Adicionar</i></button>
+                </form>
             </div>
         </div>
     }
 </section>
+
+<!-- Modal de adicção ao carrinho-->
+@* <div class="modal fade" id="modalAddCarrinho" tabindex="-1" aria-labelledby="produtoAdicionadoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="produtoAdicionadoModalLabel">Produto Adicionado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                O produto foi adicionado ao carrinho!
+            </div>
+        </div>
+    </div>
+</div> *@
 
 

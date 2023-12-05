@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Wr/0HV7y1yCcLxJqoBtlRRKMTVTS7/ODI/RJ2shAqk=",
+  "Hash": "OBC1XFG1zwkdR+Vg+gFWnXJ5xrhIqvWv5QKH8d8zE24=",
   "Source": "PedeRoca",
   "BasePath": "_content/PedeRoca",
   "Mode": "Default",
@@ -39290,6 +39290,25 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\Banner\\Desktop2.svg"
     },
     {
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Banner\\Prancheta 3.png",
+      "SourceId": "PedeRoca",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
+      "BasePath": "_content/PedeRoca",
+      "RelativePath": "Imagens/Banner/Prancheta 3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\Banner\\Prancheta 3.png"
+    },
+    {
       "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Banner\\SVG\\Carrocel1.svg",
       "SourceId": "PedeRoca",
       "SourceType": "Discovered",
@@ -52284,6 +52303,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\JQHelper.js"
+    },
+    {
+      "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\ModalAddCarrinho.js",
+      "SourceId": "PedeRoca",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\",
+      "BasePath": "_content/PedeRoca",
+      "RelativePath": "js/ModalAddCarrinho.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ModalAddCarrinho.js"
     },
     {
       "Identity": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\MudarClasse.js",

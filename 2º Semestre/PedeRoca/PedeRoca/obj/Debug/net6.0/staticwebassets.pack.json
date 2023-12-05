@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Imagens\\Banner\\Desktop_.svg"
     },
     {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Banner\\Prancheta 3.png",
+      "PackagePath": "staticwebassets\\Imagens\\Banner\\Prancheta 3.png"
+    },
+    {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\Imagens\\Banner\\SVG\\Carrocel1.svg",
       "PackagePath": "staticwebassets\\Imagens\\Banner\\SVG\\Carrocel1.svg"
     },
@@ -10995,6 +10999,10 @@
     {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\JQHelper.js",
       "PackagePath": "staticwebassets\\js\\JQHelper.js"
+    },
+    {
+      "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\ModalAddCarrinho.js",
+      "PackagePath": "staticwebassets\\js\\ModalAddCarrinho.js"
     },
     {
       "Id": "D:\\OneDrive - Fatec Centro Paula Souza\\01.Fatec\\00.Aulas\\Projeto Interdiciplinar\\PedeRoca\\2º Semestre\\PedeRoca\\PedeRoca\\wwwroot\\js\\MudarClasse.js",

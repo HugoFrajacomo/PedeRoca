@@ -1,21 +1,21 @@
-// Função para calcular o valor total do produto
-function calcularTotalProduto(itemIndex) {
-    // Obter o preço unitário do produto
-    var precoUnitario = parseFloat(document.getElementById('precoProduto' + itemIndex).innerText);
+//function calcularValorTotal(id) {
+//  let idElementoPreco = "precoProduto_" + id;
+//  let idElementoQuantidade = "quantidadeProduto_" + id;
+//  let idElementoValorTotal = "valorTotalProduto_" + id;
 
-    // Obter a quantidade do produto
-    var quantidade = parseFloat(document.getElementById('quantidadeProduto' + itemIndex).value);
+//  let precoProduto = Number(document.getElementById(idElementoPreco).innerHTML.replace('R$',''));
+//  let quantidadeProduto = Number(document.getElementById(idElementoQuantidade).value);
+//  document.getElementById(idElementoValorTotal).innerHTML = String((precoProduto * quantidadeProduto).toFixed(2)).replace('.',',');
+//}
 
-    // Calcular o valor total do produto
-    var valorTotal = precoUnitario * quantidade;
 
-    // Atualizar o span com o valor total do produto
-    document.getElementById('valorTotalProduto' + itemIndex).innerText = valorTotal.toFixed(2); // Exibindo o valor com 2 casas decimais
+function calcularValorTotal(id) {
+    let idElementoPreco = "precoProduto_" + id;
+    let idElementoQuantidade = "quantidadeProduto" + id; // Removendo o underline (_) extra
+    let idElementoValorTotal = "valorTotalProduto_" + id;
+
+    let precoProduto = Number(document.getElementById(idElementoPreco).innerHTML.replace('R$', ''));
+    let quantidadeProduto = Number(document.getElementById(idElementoQuantidade).value);
+    document.getElementById(idElementoValorTotal).innerHTML = String((precoProduto * quantidadeProduto).toFixed(2)).replace('.', ',');
 }
 
-// Exemplo de chamada para calcular o valor total do produto ao alterar a quantidade
-document.querySelectorAll('.quantidadeProduto').forEach((input, index) => {
-    input.addEventListener('change', function () {
-        calcularTotalProduto(index + 1);
-    });
-});
