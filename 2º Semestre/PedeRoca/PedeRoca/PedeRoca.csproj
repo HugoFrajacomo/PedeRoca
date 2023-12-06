@@ -7,19 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Carrinho\**" />
     <Compile Remove="Views\Home\**" />
     <Compile Remove="Views\ItemDoCarrinho\**" />
     <Compile Remove="wwwroot\js\NovaPasta\**" />
-    <Content Remove="Views\Carrinho\**" />
     <Content Remove="Views\Home\**" />
     <Content Remove="Views\ItemDoCarrinho\**" />
     <Content Remove="wwwroot\js\NovaPasta\**" />
-    <EmbeddedResource Remove="Views\Carrinho\**" />
     <EmbeddedResource Remove="Views\Home\**" />
     <EmbeddedResource Remove="Views\ItemDoCarrinho\**" />
     <EmbeddedResource Remove="wwwroot\js\NovaPasta\**" />
-    <None Remove="Views\Carrinho\**" />
     <None Remove="Views\Home\**" />
     <None Remove="Views\ItemDoCarrinho\**" />
     <None Remove="wwwroot\js\NovaPasta\**" />
