@@ -75,11 +75,14 @@
                         <li class="nav-item">
                             <a class="nav-link linkPadraoNav" asp-controller="Produto" asp-action="Index"><i class="bi bi-house-door-fill"></i> Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link linkPadraoNav" asp-controller="ItemDoCarrinho" asp-action="DetailItemCarrinho" asp-route-id="@ViewData["Id"]">
-                                <i class="bi bi-cart tamanhoCarrinhoNav"></i>Carrinho
-                            </a>
-                        </li>
+                        @if (ViewData["Id"]?.ToString() != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link linkPadraoNav" asp-controller="ItemDoCarrinho" asp-action="Carrinho" asp-route-id="@ViewData["Id"]">
+                                    <i class="bi bi-cart tamanhoCarrinhoNav"></i>Carrinho
+                                </a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link linkPadraoNav" asp-controller="Sobre" asp-action="Index"><i class="bi bi-buildings"></i> Sobre</a>
                         </li>
@@ -94,7 +97,7 @@
                     <ul class="navbar-nav">
                         @{
                             //Se estiver logado
-                            if (ViewData["Tipo"]?.ToString() != null)
+                            if (ViewData["Id"]?.ToString() != null)
                             {
                                 <li class="nav-item ">
                                     <a class="nav-link linkPadraoNav" asp-controller="Pessoa" asp-action="Perfil" asp-route-id="@ViewData["Id"]"><i class="bi bi-person-circle"></i> Perfil</a>

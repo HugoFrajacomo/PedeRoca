@@ -9,26 +9,21 @@
   <ItemGroup>
     <Compile Remove="Views\Carrinho\**" />
     <Compile Remove="Views\Home\**" />
-    <Compile Remove="Views\ItemDoCarrinho\**" />
     <Compile Remove="wwwroot\js\NovaPasta\**" />
     <Content Remove="Views\Carrinho\**" />
     <Content Remove="Views\Home\**" />
-    <Content Remove="Views\ItemDoCarrinho\**" />
     <Content Remove="wwwroot\js\NovaPasta\**" />
     <EmbeddedResource Remove="Views\Carrinho\**" />
     <EmbeddedResource Remove="Views\Home\**" />
-    <EmbeddedResource Remove="Views\ItemDoCarrinho\**" />
     <EmbeddedResource Remove="wwwroot\js\NovaPasta\**" />
     <None Remove="Views\Carrinho\**" />
     <None Remove="Views\Home\**" />
-    <None Remove="Views\ItemDoCarrinho\**" />
     <None Remove="wwwroot\js\NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\HomeController.cs" />
     <Compile Remove="Repositories\ADO\SQLServer\CompraDAO.cs" />
-    <Compile Remove="Repositories\ADO\SQLServer\ItemDoCarrinhoDAO.cs" />
     <Compile Remove="Repositories\ADO\SQLServer\ProdutoDAO-DESKTOP-JHN6Q5P.cs" />
   </ItemGroup>
 
