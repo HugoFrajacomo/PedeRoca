@@ -44,7 +44,7 @@
     {
         <div class="geralCard cartaoProduto">
             <div class="posicaoPreco">
-                <span id="precoProduto">@Html.DisplayFor(model => item.PrecoUnitario)</span>
+                <span id="precoProduto1">@Html.DisplayFor(model => item.PrecoUnitario)</span>
             </div>
             <div class="posicaoFavorito">
                 <button id="boxFavoritoF1" onclick="trocarIcone('F1')">
@@ -67,10 +67,23 @@
             </div>
             <hr>
             <div class="qtdTotalCompraCarrinho">
+<<<<<<< HEAD
                 <form class="input-group" role="group" aria-label="Basic example" asp-route-idproduto="@Html.DisplayFor(model => item.Id_produtos)" asp-action="NomeDoSeuMetodo" asp-controller="NomeDoSeuController" method="post">
                     <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd">
                     <button class="inputBorda btn_addcarrinho" id="valorTotalProduto"><i class="bi bi-cart-plus">Adicionar</i></button>
                 </form>
+=======
+                <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                    <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1"
+                           id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(1)">
+                    <span class="inputBorda valorTotalProduto" id="valorTotalProduto1"></span>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+@*                     @Html.ActionLink("Carrinho", "addProduto", new { id = item.Id_produtos }, new { @class = "link_DMOExcluir" }) *@
+                    <button type="button" class="btnComprar">Comprar</button>
+                    <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
+                </div>
+>>>>>>> parent of b596196 (Carrinho de Compras)
             </div>
         </div>
     }

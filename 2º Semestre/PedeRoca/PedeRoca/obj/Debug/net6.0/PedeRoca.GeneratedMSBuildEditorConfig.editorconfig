@@ -19,6 +19,21 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
+=======
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/CarrinhoDeCompras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cQ2FycmluaG9EZUNvbXByYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/DetailItemCarrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cRGV0YWlsSXRlbUNhcnJpbmhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/EditarItemCarrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cRWRpdGFySXRlbUNhcnJpbmhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> parent of b596196 (Carrinho de Compras)
 [D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

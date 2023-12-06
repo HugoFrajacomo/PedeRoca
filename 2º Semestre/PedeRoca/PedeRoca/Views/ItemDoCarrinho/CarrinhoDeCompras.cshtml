@@ -2,19 +2,6 @@
 
 @{
     ViewData["Title"] = "Carrinho";
-
-    decimal total = 0;
-    decimal totalComfrete = 0;
-    DateTime data = DateTime.Now;
-    ViewBag.Entrega = data.AddDays(7).ToString("dddd - dd / MM / yyyy");
-
-    foreach (var item in Model)
-    {
-        total += item.Produto.PrecoUnitario * item.Quantidade;
-        totalComfrete = total + 5;
-        ViewBag.Total = total;
-        ViewBag.TotalComFrete = totalComfrete;
-    }
 }
 
 <div class="bgCarrinhoDeCompras">
@@ -63,7 +50,7 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                                 Total Produdos
-                                <span id="CalculoTotal">R$ @ViewBag.Total</span>
+                                <span>R$16,50</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                 Frete
@@ -76,7 +63,7 @@
                                         <p class="mb-0">(Frete incluso)</p>
                                     </strong>
                                 </div>
-                                <span><strong>R$ @ViewBag.TotalComFrete</strong></span>
+                                <span><strong>R$21,50</strong></span>
                             </li>
                         </ul>
                         <a href="finalizarCompra.html">
@@ -95,7 +82,7 @@
                 </div>
                 <div class="card-body comecoCard freteCarrinho">
                     <p><strong>Expectativa de entrega</strong></p>
-                    <p class="mb-0 AjusteDataEntrega">@ViewBag.Entrega</p>
+                    <p class="mb-0">Sexta-Feira - 16/06/2023</p>
                 </div>
                 <div class="card mb-4 mb-lg-0 formaPagamento">
                     <div class="card-body formaPagamento">
