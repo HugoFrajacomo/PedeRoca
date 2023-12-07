@@ -31,7 +31,7 @@ namespace PedeRoca.Repositories.ADO.SQLServer
                 using (SqlCommand command = new SqlCommand())
                 {
                     command.Connection = connection;
-                    command.CommandText = "select id_itemCarrinho, P.id_produto, quantidade  FROM tb_produtos AS P INNER JOIN tb_itensCarrinho AS IC ON (P.id_produto = IC.id_produto) INNER JOIN tb_compras AS C ON (C.id_carrinhoCompra = IC.id_carrinhoCompra) INNER JOIN tb_usuarios AS U ON (C.id_usuario = U.id_usuario) WHERE U.id_usuario =@id";
+                    command.CommandText = "select id_itemCarrinho, P.id_produto, quantidade, U.id_usuario  FROM tb_produtos AS P INNER JOIN tb_itensCarrinho AS IC ON (P.id_produto = IC.id_produto) INNER JOIN tb_carrinhoCompras AS CC ON (CC.id_carrinhoCompra = IC.id_carrinhoCompra) INNER JOIN tb_usuarios AS U ON (CC.id_usuario = U.id_usuario) WHERE U.id_usuario =@id";
                     command.Parameters.Add(new SqlParameter("@id", System.Data.SqlDbType.Int)).Value = id;
 
                     //Onde será retornada a informação da consulta do banco
