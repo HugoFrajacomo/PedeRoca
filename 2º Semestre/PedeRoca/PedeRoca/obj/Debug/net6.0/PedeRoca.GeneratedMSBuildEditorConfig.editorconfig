@@ -10,103 +10,103 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PedeRoca
 build_property.RootNamespace = PedeRoca
-build_property.ProjectDir = D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca\
+build_property.ProjectDir = C:\Users\fraja\OneDrive\Documentos\GitHub\PedeRoca\2º Semestre\PedeRoca\PedeRoca\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\OneDrive - Fatec Centro Paula Souza\01.Fatec\00.Aulas\Projeto Interdiciplinar\PedeRoca\2º Semestre\PedeRoca\PedeRoca
+build_property.MSBuildProjectDirectory = C:\Users\fraja\OneDrive\Documentos\GitHub\PedeRoca\2º Semestre\PedeRoca\PedeRoca
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/Carrinho.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/Carrinho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cQ2FycmluaG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/EditarItemCarrinho.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/ItemDoCarrinho/EditarItemCarrinho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbURvQ2FycmluaG9cRWRpdGFySXRlbUNhcnJpbmhvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMCreate.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMDetails.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETURldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMEdit.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETUVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMPessoa.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/ADMPessoa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEFETVBlc3NvYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Cadastro.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXENhZGFzdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/EditarPerfil.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/EditarPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEVkaXRhclBlcmZpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Login.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Perfil.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Pessoa/Perfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXFBlcmZpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMCreate.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMDetails.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMEdit.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMProduto.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/ADMProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xBRE1Qcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/Index.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Produto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_LayoutADM.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_LayoutADM.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBRE0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMDetails.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcQURNRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMMenssagens.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/ADMMenssagens.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcQURNTWVuc3NhZ2Vucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/index.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Sobre/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29icmVcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewImports.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewStart.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/OneDrive - Fatec Centro Paula Souza/01.Fatec/00.Aulas/Projeto Interdiciplinar/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_Layout.cshtml]
+[C:/Users/fraja/OneDrive/Documentos/GitHub/PedeRoca/2º Semestre/PedeRoca/PedeRoca/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-515halpndo
