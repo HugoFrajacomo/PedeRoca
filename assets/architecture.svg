@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#070a14"/>
+    </linearGradient>
+
+    <!-- Card Gradients -->
+    <linearGradient id="mvcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="reactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#172554"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="dbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="borderMVC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="borderReact" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="borderDB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-react" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComponentTransfer in="blur" result="boost">
+        <feFuncA type="linear" slope="0.6"/>
+      </feComponentTransfer>
+      <feComposite in="SourceGraphic" in2="boost" operator="over"/>
+    </filter>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 24px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #94a3b8; }
+    .section-title { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 700; fill: #f8fafc; }
+    .card-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; fill: #f8fafc; }
+    .card-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #cbd5e1; }
+    .badge { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; font-weight: 700; fill: #ffffff; }
+    .flow-label { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; font-weight: 600; fill: #64748b; }
+    .conn-line { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.05">
+    <path d="M 0,40 L 900,40 M 0,80 L 900,80 M 0,120 L 900,120 M 0,160 L 900,160 M 0,200 L 900,200 M 0,240 L 900,240 M 0,280 L 900,280 M 0,320 L 900,320 M 0,360 L 900,360 M 0,400 L 900,400 M 0,440 L 900,440 M 0,480 L 900,480" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M 40,0 L 40,520 M 80,0 L 80,520 M 120,0 L 120,520 M 160,0 L 160,520 M 200,0 L 200,520 M 240,0 L 240,520 M 280,0 L 280,520 M 320,0 L 320,520 M 360,0 L 360,520 M 400,0 L 400,520 M 440,0 L 440,520 M 480,0 L 480,520 M 520,0 L 520,520 M 560,0 L 560,520 M 600,0 L 600,520 M 640,0 L 640,520 M 680,0 L 680,520 M 720,0 L 720,520 M 760,0 L 760,520 M 80,0 L 80,520 M 840,0 L 840,520 M 880,0 L 880,520" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text x="0" y="0" class="title">EVOLUÇÃO ARQUITETURAL: PEDE ROÇA</text>
+    <text x="0" y="20" class="subtitle">A transição do modelo monolítico clássico para a modernização em Single Page Application (SPA)</text>
+  </g>
+
+  <!-- ================= LEFT SIDE: 2º SEMESTRE (MVC) ================= -->
+  <g transform="translate(40, 110)">
+    <!-- Main Box -->
+    <rect width="380" height="370" rx="16" fill="url(#mvcGrad)" stroke="url(#borderMVC)" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="15" y="15" width="110" height="24" rx="12" fill="#334155"/>
+    <text x="70" y="30" class="badge" text-anchor="middle">2º SEMESTRE</text>
+    <text x="140" y="32" class="section-title">ASP.NET Core MVC</text>
+    
+    <!-- Client (Browser) Card -->
+    <g transform="translate(25, 60)">
+      <rect width="140" height="75" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+      <rect x="0" y="0" width="140" height="18" rx="8" fill="#475569"/>
+      <!-- browser dot icons -->
+      <circle cx="10" cy="9" r="3" fill="#ef4444"/>
+      <circle cx="20" cy="9" r="3" fill="#eab308"/>
+      <circle cx="30" cy="9" r="3" fill="#22c55e"/>
+      <text x="70" y="42" class="card-title" text-anchor="middle">Navegador</text>
+      <text x="70" y="58" class="card-text" text-anchor="middle">HTML, CSS &amp; JS Puros</text>
+    </g>
+
+    <!-- Controller Card -->
+    <g transform="translate(215, 60)">
+      <rect width="140" height="75" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="70" y="28" class="card-title" text-anchor="middle">Controllers (C#)</text>
+      <text x="70" y="46" class="card-text" text-anchor="middle">Processa requisições</text>
+      <text x="70" y="58" class="card-text" text-anchor="middle">Controle de Fluxo</text>
+      <rect x="40" y="65" width="60" height="15" rx="4" fill="#a855f7" opacity="0.2"/>
+      <text x="70" y="76" font-family="monospace" font-size="8" font-weight="700" fill="#c084fc" text-anchor="middle">Routing Engine</text>
+    </g>
+
+    <!-- Views Card -->
+    <g transform="translate(25, 175)">
+      <rect width="140" height="75" rx="8" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+      <text x="70" y="28" class="card-title" text-anchor="middle">Views (.cshtml)</text>
+      <text x="70" y="46" class="card-text" text-anchor="middle">Razor View Engine</text>
+      <text x="70" y="58" class="card-text" text-anchor="middle">Renderização no Servidor</text>
+    </g>
+
+    <!-- DAO (Data Access Object) Card -->
+    <g transform="translate(215, 175)">
+      <rect width="140" height="75" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="70" y="28" class="card-title" text-anchor="middle">Repositórios DAO</text>
+      <text x="70" y="46" class="card-text" text-anchor="middle">ADO.NET Puro (SQL)</text>
+      <text x="70" y="58" class="card-text" text-anchor="middle">SqlConnection &amp; Reader</text>
+    </g>
+
+    <!-- SQL Server Database Card (Shared conceptually) -->
+    <g transform="translate(120, 280)">
+      <rect width="140" height="75" rx="8" fill="url(#dbGrad)" stroke="url(#borderDB)" stroke-width="1.5"/>
+      <text x="70" y="25" class="card-title" text-anchor="middle">SQL Server DB</text>
+      <text x="70" y="43" class="card-text" text-anchor="middle">Tabelas Relacionais</text>
+      <text x="70" y="55" class="card-text" text-anchor="middle">Stored Data &amp; Triggers</text>
+      <rect x="35" y="60" width="70" height="12" rx="3" fill="#22c55e" opacity="0.2"/>
+      <text x="70" y="69" font-family="monospace" font-size="7" font-weight="700" fill="#a7f3d0" text-anchor="middle">db_PedeRoca</text>
+    </g>
+
+    <!-- Connections Left -->
+    <!-- Browser to Controller -->
+    <path d="M 165,90 L 215,90" class="conn-line" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="190" y="84" class="flow-label" text-anchor="middle">GET/POST</text>
+
+    <!-- Controller to DAO -->
+    <path d="M 285,135 L 285,175" class="conn-line" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- DAO to Database -->
+    <path d="M 285,250 L 285,295 C 285,310 260,310 260,317" class="conn-line" stroke="#3b82f6" stroke-width="2"/>
+    <text x="290" y="270" class="flow-label" text-anchor="start">ADO.NET</text>
+
+    <!-- Controller to View -->
+    <path d="M 215,115 L 120,115 C 105,115 105,160 105,175" class="conn-line" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="145" y="132" class="flow-label" text-anchor="middle">Bind Model</text>
+
+    <!-- View to Browser -->
+    <path d="M 95,175 L 95,135" class="conn-line" stroke="#ef4444" stroke-width="2"/>
+    <text x="90" y="155" class="flow-label" text-anchor="end">HTML Renderizado</text>
+  </g>
+
+  <!-- ================= RIGHT SIDE: 3º SEMESTRE (React + SPA) ================= -->
+  <g transform="translate(480, 110)">
+    <!-- Main Box -->
+    <rect width="380" height="370" rx="16" fill="url(#reactGrad)" stroke="url(#borderReact)" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="15" y="15" width="110" height="24" rx="12" fill="#1d4ed8" filter="url(#glow-react)"/>
+    <text x="70" y="30" class="badge" text-anchor="middle">3º SEMESTRE</text>
+    <text x="140" y="32" class="section-title">React + Vite SPA</text>
+
+    <!-- Modern Browser (React App) -->
+    <g transform="translate(25, 75)">
+      <rect width="140" height="160" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" filter="url(#glow-react)"/>
+      <rect x="0" y="0" width="140" height="18" rx="8" fill="#1e293b"/>
+      <!-- browser dot icons -->
+      <circle cx="10" cy="9" r="3" fill="#ef4444"/>
+      <circle cx="20" cy="9" r="3" fill="#eab308"/>
+      <circle cx="30" cy="9" r="3" fill="#22c55e"/>
+      <text x="70" y="35" class="card-title" text-anchor="middle">Navegador (SPA)</text>
+      
+      <!-- Inside SPA Components -->
+      <rect x="10" y="48" width="120" height="30" rx="4" fill="#1e293b" stroke="#0ea5e9"/>
+      <text x="70" y="62" font-family="sans-serif" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">App.jsx (Core)</text>
+      <text x="70" y="73" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Vite HMR &amp; Hooks</text>
+
+      <rect x="10" y="85" width="120" height="30" rx="4" fill="#1e293b" stroke="#06b6d4"/>
+      <text x="70" y="98" font-family="sans-serif" font-size="9" font-weight="700" fill="#22d3ee" text-anchor="middle">Componentes</text>
+      <text x="70" y="109" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Reusabilidade e Estado</text>
+      
+      <!-- React Virtual DOM Badge -->
+      <rect x="25" y="125" width="90" height="15" rx="4" fill="#0ea5e9" opacity="0.2"/>
+      <text x="70" y="136" font-family="monospace" font-size="8" font-weight="700" fill="#38bdf8" text-anchor="middle">Virtual DOM</text>
+    </g>
+
+    <!-- Future API/Backend Service Card -->
+    <g transform="translate(215, 75)">
+      <rect width="140" height="75" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+      <text x="70" y="28" class="card-title" text-anchor="middle">API Rest / Backend</text>
+      <text x="70" y="46" class="card-text" text-anchor="middle">ASP.NET Core WebAPI</text>
+      <text x="70" y="58" class="card-text" text-anchor="middle">EndPoints JSON</text>
+      <rect x="35" y="63" width="70" height="10" rx="2" fill="#10b981" opacity="0.2"/>
+      <text x="70" y="71" font-family="monospace" font-size="7" font-weight="700" fill="#34d399" text-anchor="middle">JSON Exchange</text>
+    </g>
+
+    <!-- Connection inside SPA -->
+    <!-- SPA Browser to API Gateway -->
+    <path d="M 165,115 L 215,115" class="conn-line" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="190" y="109" class="flow-label" text-anchor="middle" fill="#38bdf8">Fetch API</text>
+    
+    <!-- SQL Server Database Card (3rd Sem context) -->
+    <g transform="translate(215, 210)">
+      <rect width="140" height="75" rx="8" fill="url(#dbGrad)" stroke="url(#borderDB)" stroke-width="1.5"/>
+      <text x="70" y="25" class="card-title" text-anchor="middle">SQL Server DB</text>
+      <text x="70" y="43" class="card-text" text-anchor="middle">Dados Consistentes</text>
+      <text x="70" y="55" class="card-text" text-anchor="middle">Segurança e Chaves</text>
+    </g>
+
+    <!-- API to DB -->
+    <path d="M 285,150 L 285,210" class="conn-line" stroke="#10b981" stroke-width="2"/>
+    <text x="290" y="185" class="flow-label" text-anchor="start">ORM / Dapper</text>
+
+    <!-- Highlighting the SPA Benefits -->
+    <g transform="translate(25, 255)">
+      <rect width="330" height="95" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="15" y="22" font-family="sans-serif" font-size="12" font-weight="700" fill="#38bdf8">Benefícios da Transição SPA:</text>
+      <text x="15" y="42" class="card-text">✓ Renderização no Cliente (Alivia processamento do servidor)</text>
+      <text x="15" y="58" class="card-text">✓ Experiência fluida (Sem recargas de páginas inteiras)</text>
+      <text x="15" y="74" class="card-text">✓ Componentização limpa com React + Vite (HMR ultra rápido)</text>
+    </g>
+  </g>
+
+  <!-- Connective transition arrow in the middle -->
+  <g transform="translate(427, 260)">
+    <circle cx="23" cy="23" r="22" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 16,23 L 30,23 M 24,17 L 31,23 L 24,29" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

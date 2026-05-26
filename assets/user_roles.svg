@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#070a14"/>
+    </linearGradient>
+
+    <!-- Role Gradients -->
+    <linearGradient id="adminGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#450a0a"/>
+    </linearGradient>
+    <linearGradient id="producerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="consumerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+
+    <!-- Inner Box Gradients -->
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Glow & Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 800; fill: #ffffff; letter-spacing: 0.5px; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #94a3b8; }
+    .role-title { font-family: system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 800; fill: #ffffff; }
+    .role-subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 10px; fill: #cbd5e1; font-weight: 600; text-transform: uppercase; }
+    .perm-header { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 700; fill: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; }
+    .perm-item { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #f1f5f9; }
+    .perm-check { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #10b981; font-weight: 900; }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.04">
+    <path d="M 0,40 L 800,40 M 0,80 L 800,80 M 0,120 L 800,120 M 0,160 L 800,160 M 0,200 L 800,200 M 0,240 L 800,240 M 0,280 L 800,280 M 0,320 L 800,320 M 0,360 L 800,360 M 0,400 L 800,400 M 0,440 L 800,440" stroke="#ffffff" stroke-width="1"/>
+    <path d="M 40,0 L 40,480 M 80,0 L 80,480 M 120,0 L 120,480 M 160,0 L 160,480 M 200,0 L 200,480 M 240,0 L 240,480 M 280,0 L 280,480 M 320,0 L 320,480 M 360,0 L 360,480 M 400,0 L 400,480 M 440,0 L 440,480 M 480,0 L 480,480 M 520,0 L 520,480 M 560,0 L 560,480 M 600,0 L 600,480 M 640,0 L 640,480 M 680,0 L 680,480 M 720,0 L 720,480 M 760,0 L 760,480" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(40, 45)">
+    <text x="0" y="0" class="title">MATRIZ DE NÍVEIS DE ACESSO (ROLES)</text>
+    <text x="0" y="20" class="subtitle">Mapeamento de permissões e operações por tipo de perfil de usuário no sistema Pede Roça</text>
+  </g>
+
+  <!-- ================= 1. CONSUMIDOR (LEFT CARD) ================= -->
+  <g transform="translate(40, 95)" filter="url(#shadow)">
+    <!-- Base Card -->
+    <rect width="220" height="340" rx="12" fill="url(#boxGrad)" stroke="#0284c7" stroke-width="1.5"/>
+    
+    <!-- Top Role Banner -->
+    <rect width="220" height="70" rx="12" fill="url(#consumerGrad)"/>
+    <!-- Clip bottom corners of the banner to match the rounded top -->
+    <rect y="58" width="220" height="12" fill="url(#boxGrad)" stroke="none"/>
+    <line x1="0" y1="70" x2="220" y2="70" stroke="#0284c7" stroke-width="1.5"/>
+
+    <!-- Avatar Icon / Symbol -->
+    <g transform="translate(25, 20)">
+      <circle cx="15" cy="15" r="14" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+      <path d="M 15,10 C 12,10 10,12 10,15 C 10,18 15,22 15,22 C 15,22 20,18 20,15 C 20,12 18,10 15,10 Z" fill="#38bdf8"/>
+    </g>
+
+    <!-- Role Name -->
+    <text x="65" y="32" class="role-title">Consumidor</text>
+    <text x="65" y="47" class="role-subtitle">Nível 0 | Clientes</text>
+
+    <!-- Content / Permissions -->
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="perm-header">Ações Disponíveis</text>
+      
+      <g transform="translate(0, 20)">
+        <!-- Item 1 -->
+        <text x="0" y="10" class="perm-check">✓</text>
+        <text x="15" y="10" class="perm-item">Navegação no Catálogo</text>
+        
+        <!-- Item 2 -->
+        <text x="0" y="30" class="perm-check">✓</text>
+        <text x="15" y="30" class="perm-item">Favoritar Produtos</text>
+
+        <!-- Item 3 -->
+        <text x="0" y="50" class="perm-check">✓</text>
+        <text x="15" y="50" class="perm-item">Carrinho de Compras dinâmico</text>
+
+        <!-- Item 4 -->
+        <text x="0" y="70" class="perm-check">✓</text>
+        <text x="15" y="70" class="perm-item">Checkout de Pedidos</text>
+
+        <!-- Item 5 -->
+        <text x="0" y="90" class="perm-check">✓</text>
+        <text x="15" y="90" class="perm-item">Autoconsulta CEP ViaCEP</text>
+
+        <!-- Item 6 -->
+        <text x="0" y="110" class="perm-check">✓</text>
+        <text x="15" y="110" class="perm-item">Gerenciamento de Perfil</text>
+
+        <!-- Separator -->
+        <line x1="0" y1="130" x2="180" y2="130" stroke="#334155" stroke-width="1"/>
+        
+        <!-- Target Code Views -->
+        <text x="0" y="150" class="perm-header" fill="#64748b">Vistas Principais</text>
+        <text x="0" y="170" font-family="monospace" font-size="9" fill="#0ea5e9">Views/Produto/Index.cshtml</text>
+        <text x="0" y="185" font-family="monospace" font-size="9" fill="#0ea5e9">Views/Pessoa/Perfil.cshtml</text>
+        <text x="0" y="200" font-family="monospace" font-size="9" fill="#0ea5e9">ItemDoCarrinho/Index.cshtml</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= 2. PRODUTOR (MIDDLE CARD) ================= -->
+  <g transform="translate(290, 95)" filter="url(#shadow)">
+    <!-- Base Card -->
+    <rect width="220" height="340" rx="12" fill="url(#boxGrad)" stroke="#059669" stroke-width="1.5"/>
+    
+    <!-- Top Role Banner -->
+    <rect width="220" height="70" rx="12" fill="url(#producerGrad)"/>
+    <rect y="58" width="220" height="12" fill="url(#boxGrad)" stroke="none"/>
+    <line x1="0" y1="70" x2="220" y2="70" stroke="#059669" stroke-width="1.5"/>
+
+    <!-- Avatar Icon / Symbol -->
+    <g transform="translate(25, 20)">
+      <circle cx="15" cy="15" r="14" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+      <!-- Sprout Leaf icon -->
+      <path d="M 12,22 C 12,22 10,16 13,13 C 16,10 20,11 20,11 C 20,11 21,15 17,18 C 14,21 12,22 12,22 Z" fill="#34d399"/>
+      <path d="M 12,22 C 12,21 13,18 16,17" fill="none" stroke="#064e3b" stroke-width="1.5"/>
+    </g>
+
+    <!-- Role Name -->
+    <text x="65" y="32" class="role-title">Produtor</text>
+    <text x="65" y="47" class="role-subtitle">Nível 2 | Agricultor</text>
+
+    <!-- Content / Permissions -->
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="perm-header">Ações Disponíveis</text>
+      
+      <g transform="translate(0, 20)">
+        <!-- Item 1 -->
+        <text x="0" y="10" class="perm-check">✓</text>
+        <text x="15" y="10" class="perm-item">Ofertar Novos Alimentos</text>
+        
+        <!-- Item 2 -->
+        <text x="0" y="30" class="perm-check">✓</text>
+        <text x="15" y="30" class="perm-item">Gerenciamento de Estoque</text>
+
+        <!-- Item 3 -->
+        <text x="0" y="50" class="perm-check">✓</text>
+        <text x="15" y="50" class="perm-item">Definição de Preço/Unidades</text>
+
+        <!-- Item 4 -->
+        <text x="0" y="70" class="perm-check">✓</text>
+        <text x="15" y="70" class="perm-item">Acesso ao Cadastro de Itens</text>
+
+        <!-- Item 5 -->
+        <text x="0" y="90" class="perm-check" fill="#ef4444">✗</text>
+        <text x="15" y="90" class="perm-item" fill="#94a3b8">Sem Acesso ADM Geral</text>
+
+        <!-- Item 6 -->
+        <text x="0" y="110" class="perm-check">✓</text>
+        <text x="15" y="110" class="perm-item">Dashboard Simplificado</text>
+
+        <!-- Separator -->
+        <line x1="0" y1="130" x2="180" y2="130" stroke="#334155" stroke-width="1"/>
+        
+        <!-- Target Code Views -->
+        <text x="0" y="150" class="perm-header" fill="#64748b">Vistas Principais</text>
+        <text x="0" y="170" font-family="monospace" font-size="9" fill="#34d399">Views/Produto/ADMProduto.cshtml</text>
+        <text x="0" y="185" font-family="monospace" font-size="9" fill="#34d399">Views/Produto/ADMCreate.cshtml</text>
+        <text x="0" y="200" font-family="monospace" font-size="9" fill="#34d399">Views/Produto/ADMEdit.cshtml</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ================= 3. ADMINISTRADOR (RIGHT CARD) ================= -->
+  <g transform="translate(540, 95)" filter="url(#shadow)">
+    <!-- Base Card -->
+    <rect width="220" height="340" rx="12" fill="url(#boxGrad)" stroke="#b91c1c" stroke-width="1.5"/>
+    
+    <!-- Top Role Banner -->
+    <rect width="220" height="70" rx="12" fill="url(#adminGrad)"/>
+    <rect y="58" width="220" height="12" fill="url(#boxGrad)" stroke="none"/>
+    <line x1="0" y1="70" x2="220" y2="70" stroke="#b91c1c" stroke-width="1.5"/>
+
+    <!-- Avatar Icon / Symbol -->
+    <g transform="translate(25, 20)">
+      <circle cx="15" cy="15" r="14" fill="#450a0a" stroke="#fca5a5" stroke-width="1.5"/>
+      <!-- Crown / Shield icon -->
+      <path d="M 9,11 L 12,18 L 15,11 L 18,18 L 21,11 L 19,21 L 11,21 Z" fill="#fca5a5"/>
+    </g>
+
+    <!-- Role Name -->
+    <text x="65" y="32" class="role-title">Administrador</text>
+    <text x="65" y="47" class="role-subtitle">Nível 1 | Gestão Total</text>
+
+    <!-- Content / Permissions -->
+    <g transform="translate(20, 95)">
+      <text x="0" y="0" class="perm-header">Ações Disponíveis</text>
+      
+      <g transform="translate(0, 20)">
+        <!-- Item 1 -->
+        <text x="0" y="10" class="perm-check">✓</text>
+        <text x="15" y="10" class="perm-item">Controle Completo do Sistema</text>
+        
+        <!-- Item 2 -->
+        <text x="0" y="30" class="perm-check">✓</text>
+        <text x="15" y="30" class="perm-item">CRUD Total de Usuários</text>
+
+        <!-- Item 3 -->
+        <text x="0" y="50" class="perm-check">✓</text>
+        <text x="15" y="50" class="perm-item">CRUD Total de Produtos</text>
+
+        <!-- Item 4 -->
+        <text x="0" y="70" class="perm-check">✓</text>
+        <text x="15" y="70" class="perm-item">Moderação de Contatos</text>
+
+        <!-- Item 5 -->
+        <text x="0" y="90" class="perm-check">✓</text>
+        <text x="15" y="90" class="perm-item">Configuração de Banners UI</text>
+
+        <!-- Item 6 -->
+        <text x="0" y="110" class="perm-check">✓</text>
+        <text x="15" y="110" class="perm-item">Relatórios e Auditoria de Vendas</text>
+
+        <!-- Separator -->
+        <line x1="0" y1="130" x2="180" y2="130" stroke="#334155" stroke-width="1"/>
+        
+        <!-- Target Code Views -->
+        <text x="0" y="150" class="perm-header" fill="#64748b">Vistas Principais</text>
+        <text x="0" y="170" font-family="monospace" font-size="9" fill="#f87171">Views/Pessoa/ADMPessoa.cshtml</text>
+        <text x="0" y="185" font-family="monospace" font-size="9" fill="#f87171">Views/Pessoa/ADMCreate.cshtml</text>
+        <text x="0" y="200" font-family="monospace" font-size="9" fill="#f87171">Views/Pessoa/ADMEdit.cshtml</text>
+      </g>
+    </g>
+  </g>
+</svg>
